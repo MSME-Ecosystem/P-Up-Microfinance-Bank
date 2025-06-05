@@ -190,7 +190,7 @@ export function Navbar() {
           <div className="hidden lg:flex items-center space-x-4 h-full">
             <Button
               asChild
-              className="border border-[#0F226B] text-[#0F226B] h-10"
+              className="border border-[#0F226B] bg-transparent text-[#0F226B] h-10"
             >
               <Link href="/auth/login">Sign in</Link>
             </Button>
