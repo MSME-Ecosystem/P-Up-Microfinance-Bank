@@ -43,8 +43,19 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@font-face {
+  font-family: "Sansation";
+  src: url("/sansation/Sansation_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Sansation", sans-serif !important;
+}
+
 body {
-  background: #FFFFFF;
+  background: #ffffff;
   color: var(--background);
 }
 
