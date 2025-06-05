@@ -1,0 +1,8 @@
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" width="64" height="64" rx="10" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M45.25 39.3929V29C45.25 23.3431 45.25 20.5147 43.4926 18.7574C41.7353 17 38.9068 17 33.25 17H31.75C26.0931 17 23.2647 17 21.5074 18.7574C19.75 20.5147 19.75 23.3431 19.75 29V43.25" stroke="#0171DF" style="stroke:#0171DF;stroke:color(display-p3 0.0039 0.4431 0.8745);stroke-opacity:1;" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M45.25 39.5H23.5C21.4289 39.5 19.75 41.179 19.75 43.25C19.75 45.321 21.4289 47 23.5 47H45.25" stroke="#0171DF" style="stroke:#0171DF;stroke:color(display-p3 0.0039 0.4431 0.8745);stroke-opacity:1;" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M45.25 47C43.179 47 41.5 45.321 41.5 43.25C41.5 41.179 43.179 39.5 45.25 39.5" stroke="#0171DF" style="stroke:#0171DF;stroke:color(display-p3 0.0039 0.4431 0.8745);stroke-opacity:1;" stroke-width="2.25" stroke-linecap="round"/>
+<path d="M37 24.5H28" stroke="#0171DF" style="stroke:#0171DF;stroke:color(display-p3 0.0039 0.4431 0.8745);stroke-opacity:1;" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.5 30.5H28" stroke="#0171DF" style="stroke:#0171DF;stroke:color(display-p3 0.0039 0.4431 0.8745);stroke-opacity:1;" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

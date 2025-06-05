@@ -6,7 +6,7 @@ import Link from "next/link";
 const Power = () => {
   return (
     <div className="text-black">
-      <div className="lg:pt-36 pt-24">
+      <div className="lg:pt-40 pt-24">
         {/* Power offline payments Section */}
         <div className="lg:flex block gap-12">
           <div className="lg:h-[550px] h-auto flex flex-col justify-center lg:w-[520px] w-auto">
@@ -23,7 +23,7 @@ const Power = () => {
             </Button>{" "}
           </div>
           <div className="lg:mt-0 mt-10">
-            <Image src="/power.svg" alt="power" height={615} width={580} />
+            <Image src="/power.svg" alt="power" height={615} width={580} className="lg:m-0 m-auto" />
           </div>
         </div>
 
