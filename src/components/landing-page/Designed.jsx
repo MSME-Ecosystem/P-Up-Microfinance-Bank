@@ -3,12 +3,12 @@ import React from "react";
 
 const Designed = () => {
   return (
-    <div className="py-24">
+    <div className="lg:py-24 py-16">
       <div>
-        <h1 className="lg:text-[40px] text-[30px] font-bold leading-tight lg:w-[644px] w-auto">
+        <h1 className="lg:text-[40px] text-[27px] font-bold leading-tight lg:w-[644px] w-auto">
           Designed for Every Operator in the Financial Stack
         </h1>
-        <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-tight py-7">
+        <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-tight lg:py-7 py-4">
           Whether you're a field agent, platform operator, aggregator, or
           merchant — each module is tailored to fit your workflow, online or
           offline.
@@ -23,7 +23,7 @@ const Designed = () => {
             height={579}
           />
         </div>
-        <div>
+        <div className="lg:mt-0 mt-7">
           <Image
             src={"/designed2.svg"}
             alt="Designed"

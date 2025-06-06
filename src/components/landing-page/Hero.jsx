@@ -5,7 +5,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="text-[#000000]">
-      <div className="bg-cover bg-center bg-[url('/hero-bg.svg')] w-full h-screen flex flex-col items-center justify-center">
+      <div className="bg-cover bg-center bg-[url('/hero-bg.svg')] w-full h-screen flex flex-col items-center justify-center lg:px-0 px-4">
         <h1 className="lg:text-[40px] text-[30px] font-bold text-center text-[#000000] leading-tight lg:w-[689px] w-auto mx-auto">
           Modern Financial Infrastructure Built for Real-World Commerce
         </h1>

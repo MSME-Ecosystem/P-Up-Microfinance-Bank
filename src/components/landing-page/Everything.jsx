@@ -7,7 +7,7 @@ const Everything = () => {
   return (
     <div className="text-[#000000] py-24">
       <div className="text-center mb-12">
-        <h1 className="lg:text-[40px] text-[30px] font-bold lg:w-[718px] w-auto mx-auto leading-tight">
+        <h1 className="lg:text-[40px] text-[28px] font-bold lg:w-[718px] w-auto mx-auto leading-tight">
           Everything You Need to Build, Run, and Scale Commerce Systems
         </h1>
         <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-tight mx-auto py-6">
@@ -28,7 +28,7 @@ const Everything = () => {
           />
         </div>
         <div>
-          <p className="lg:text-[16px] text-[14px] mb-3">Smart checkout</p>
+          <p className="lg:text-[16px] text-[14px] mb-3 lg:mt-0 mt-5">Smart checkout</p>
           <h1 className="lg:text-[32px] text-[25px] font-bold text-[#0171DF] lg:w-[462px] w-auto leading-tight">
             Checkout That Thinks Like Your Business
           </h1>
@@ -56,7 +56,7 @@ const Everything = () => {
             <Link href="/offline-stack">Offline stack</Link>
           </Button>
         </div>
-        <div>
+        <div className="lg:mt-0 mt-10">
           <Image
             src={"/everything2.svg"}
             alt="Everything"

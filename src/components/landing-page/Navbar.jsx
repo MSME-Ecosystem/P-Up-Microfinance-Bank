@@ -35,7 +35,7 @@ export function Navbar() {
         {
           name: "ReconcileX",
           description: "Automated reconciliation & smart accounting",
-          href: "/reconsilex",
+          href: "/reconcilex",
           image: "/dropdown-logo.svg",
         },
         {
@@ -207,16 +207,16 @@ export function Navbar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="h-10 w-10" />
+              <X className="h-7 w-7 text-[#000000]" />
             ) : (
-              <Menu className="h-10 w-10" />
+              <Menu className="h-7 w-7 text-[#000000]" />
             )}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 pb-4 h-[calc(100vh-70px)] overflow-y-auto">
+          <div className="lg:hidden  pb-4 h-[calc(100vh-70px)] overflow-y-auto bg-white">
             <nav className="flex flex-col space-y-2">
               {navigation.map((item) =>
                 item.dropdown ? (
@@ -251,7 +251,7 @@ export function Navbar() {
                               />
                             </div>
                             <div>
-                              <span className="text-sm font-medium block">
+                              <span className="text-sm font-medium block text-black">
                                 {subItem.name}
                               </span>
                               <span className="text-xs text-gray-500 block">
@@ -274,14 +274,13 @@ export function Navbar() {
                   </Link>
                 )
               )}
-              <div className="flex flex-col space-y-4 pt-4 border-t border-gray-200">
+              <div className="flex flex-col space-y-4 pt-4">
                 <Button
                   asChild
                   variant="ghost"
-                  className="justify-center border border-[#0F226B]"
+                  className="justify-center border border-[#0F226B] text-[#000000]"
                 >
                   <Link href="/auth/login" onClick={() => setIsMenuOpen(false)}>
-                    <User className="h-4 w-4 mr-2" />
                     Sign in
                   </Link>
                 </Button>

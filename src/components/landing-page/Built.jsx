@@ -5,7 +5,7 @@ const Built = () => {
   return (
     <div className="py-10">
       <div>
-        <h1 className="lg:text-[40px] text-[30px] font-bold text-center text-[#000000] leading-tight lg:w-[718px] w-auto mx-auto">
+        <h1 className="lg:text-[40px] text-[27px] font-bold text-center text-[#000000] leading-tight lg:w-[718px] w-auto mx-auto">
           Built for the Real World. Engineered for Any Condition
         </h1>
         <p className="lg:w-[462px] w-auto mx-auto text-center mt-7">
@@ -14,8 +14,8 @@ const Built = () => {
           distributed environments.
         </p>
       </div>
-      <div className="mt-10 flex gap-5">
-        <div className="bg-[#0F226B0D] rounded-md border border-[#0000001A] lg:w-[573px] w-auto h-[315px] gap-5 flex items-end justify-center px-5">
+      <div className="mt-10 lg:flex lg:flex-row flex-col gap-5">
+        <div className="bg-[#0F226B0D] rounded-md lg:py-0 py-7 border border-[#0000001A] lg:w-[573px] w-auto lg:h-[315px] h-auto gap-5 lg:flex lg:flex-row flex-col items-end justify-center px-5">
           <div className="mb-3">
             <h1 className="lg:text-[18px] text-[16px] font-bold">
               Offline QR → Bluetooth sync
@@ -25,11 +25,11 @@ const Built = () => {
               offline — using device-to-device logic and QR scan confirmations.
             </p>
           </div>
-          <div>
+          <div className="flex lg:justify-end justify-center">
             <Image src={"/built1.svg"} alt="built" width={227} height={217} />
           </div>
         </div>
-        <div className="bg-[#0F226B0D] rounded-md border border-[#0000001A] lg:w-[573px] w-auto h-[315px] gap-5 flex items-end justify-center px-5">
+       <div className="bg-[#0F226B0D] lg:mt-0 mt-5 rounded-md lg:py-0 py-7 border border-[#0000001A] lg:w-[573px] w-auto lg:h-[315px] h-auto gap-5 lg:flex lg:flex-row flex-col items-end justify-center px-5">
           <div className="mb-3">
             <h1 className="lg:text-[18px] text-[16px] font-bold">
               Field agent → Merchant Wallet → ReconcileX

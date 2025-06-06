@@ -25,8 +25,8 @@ const Purpose = () => {
             className="rounded-md"
           />
         </div>
-        <div className="bg-[#859BA81A] rounded-md lg:w-[498px] w-auto lg:h-[591px] h-auto flex flex-col justify-center items-start px-24">
-          <p className="mb-4 text-start"> ReconcileX</p>
+        <div className="bg-[#859BA81A] rounded-md lg:w-[498px] lg:mt-0 mt-5 w-auto lg:h-[591px] lg:py-0 py-10 h-auto flex flex-col justify-center items-start lg:px-24 px-6">
+          <p className="mb-4 text-start lg:mt-0 mt-5"> ReconcileX</p>
           <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[342px] w-auto leading-tight">
             Automated Reconciliation. Zero Guesswork
           </h1>
