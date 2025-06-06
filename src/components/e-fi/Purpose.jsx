@@ -6,7 +6,7 @@ import Link from "next/link";
 const Purpose = () => {
   return (
     <div>
-      <div className="lg:pt-40 pt-28">
+      <div className="lg:pt-[102px] pt-28">
         <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[520px] w-auto">
             <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center lg:w-[510px] w-auto text-nowrap">
