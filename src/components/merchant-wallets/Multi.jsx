@@ -30,10 +30,11 @@ const Multi = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Smart QR Generator
+          Automated Money Movement{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Build QR codes with item, location, and pricing metadata.
+          Schedule or trigger internal transfers based on conditions—like
+            commissions, repayments, or contributions.{" "}
           </p>
         </div>
         <div>
@@ -42,7 +43,7 @@ const Multi = () => {
             alt="POS"
             height={442}
             width={495}
-            className="rounded-xl"
+            className="rounded-md"
           />
         </div>
         <div className="h-[440px] lg:flex hidden flex-col justify-center">

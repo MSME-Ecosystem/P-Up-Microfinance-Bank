@@ -48,11 +48,12 @@ const Onetime = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center w-[487px]">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
-            Visual Reports for Non-Numbers People{" "}
+          Public Trust Profile{" "}
           </h2>
           <p className="text-[16px] text-[#1B1B1B]">
-            Pie charts, trend lines, bar graphs—all automatically generated for
-            easier decisions and presentations.{" "}
+          Each merchant gets a unique profile page showing order stats,
+            ratings, badges, and platform links.
+          
           </p>
         </div>
       </div>

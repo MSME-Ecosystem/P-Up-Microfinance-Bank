@@ -1,4 +1,3 @@
-import Purpose from "@/components/escrow/Purpose";
 import GetStarted from "@/components/landing-page/GetStarted";
 import Ready from "@/components/universalwallet/Ready";
 import React from "react";
@@ -6,6 +5,7 @@ import Order from "@/components/universalwallet/Order";
 import ERP from "@/components/universalwallet/ERP";
 import Cards from "@/components/universalwallet/Cards";
 import CRP from "@/components/universalwallet/CRP";
+import Purpose from "@/components/universalwallet/Purpose";
 
 const page = () => {
   return (

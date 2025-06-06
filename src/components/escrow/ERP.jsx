@@ -2,36 +2,24 @@ import Image from "next/image";
 import React from "react";
 
 const ERP = () => {
-    return (
-        <div className="py-24 ">
-
-            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-
-                <div className="flex flex-col items-start  md:w-1/2 w-full ">
-                    <h1 className="py-5 text-[16px] leading-tight">
-                        Featuring
-                    </h1>
-                    <h1 className="text-[28px] text-[#0171DF] font-bold leading-tight">
-                        ERP Integration
-                    </h1>
-                    <p className="text-[#1B1B1B] text-[14px] mt-4 pr-5">
-                        Sync verified balances and logs with accounting or sales platforms.</p>
-
-                </div>
-
-                <div className="w-full md:w-1/2 flex md:pr-8">
-                    <Image
-                        src="/erp.png"
-                        alt="Order"
-                        width={350}
-                        height={326}
-                        className="rounded-md max-w-full h-auto"
-                    />
-                </div>
-            </div>
-
+  return (
+    <div>
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-20 mt-16 lg:mb-30 mb-16">
+        <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center">
+          <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
+          <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700]">
+            ERP Integration
+          </h2>
+          <p className="text-[16px] lg:mb-0 mb-4">
+            Sync verified balances and logs with accounting or sales platforms.
+          </p>
         </div>
-    );
+        <div>
+          <Image src="/erp.png" alt="" height={442} width={495} />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ERP;

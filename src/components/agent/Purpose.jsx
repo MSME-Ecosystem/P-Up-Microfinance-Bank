@@ -5,36 +5,34 @@ import Link from "next/link";
 
 const Purpose = () => {
   return (
-    <div className="lg:py-24 pt-24 pb-12 ">
-
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-
-        <div className="flex flex-col items-start  lg:w-1/2 w-full">
-          <h1 className="text-[32px] font-bold leading-tight">
-            Smart Field Collections. Built for the Last Mile.
-          </h1>
-          <p className="text-[#1B1B1B] text-[16px] mt-4">
-            AgentIQ helps financial institutions and organizations deploy, track, and empower agents to manage payments, loans, and field operations—online or offline, with GPS-aware tools designed for rugged conditions.
-          </p>
-          <Button
-            asChild
-            className="bg-[#0F226B] text-white text-sm h-10 px-6 mt-6"
-          >
-            <Link href="/login">Get Started</Link>
-          </Button>
-        </div>
-
-        <div className="w-full lg:w-1/2 flex justify-center">
-          <Image
-            src="/1c.png"
-            alt="checkout"
-            width={629}
-            height={591}
-            className="rounded-md max-w-full h-auto"
-          />
+    <div>
+      <div className="lg:pt-32 pt-28">
+        <div className="lg:flex block justify-center gap-12">
+          <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[520px] w-auto">
+            <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center lg:w-[510px] w-auto text-nowrap ">
+              Smart Field Collections. <br /> Built for the Last Mile.
+            </p>
+            <p className=" py-6 text-[#1B1B1B] lg:text-left text-center lg:mb-4 mb-0">
+              AgentIQ helps financial institutions and organizations deploy,
+              track, and empower agents to manage payments, loans, and field
+              operations—online or offline, with GPS-aware tools designed for
+              rugged conditions.
+            </p>
+            <Button asChild className="bg-[#0F226B] text-white h-10">
+              <Link href="/auth/register">Get Started</Link>
+            </Button>{" "}
+          </div>
+          <div className="lg:mt-0 mt-10">
+            <Image
+              src="/jays.svg"
+              alt="checkout"
+              height={615}
+              width={580}
+              className="lg:m-0 m-auto rounded-md"
+            />
+          </div>
         </div>
       </div>
-
     </div>
   );
 };

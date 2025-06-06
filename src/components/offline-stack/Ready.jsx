@@ -3,9 +3,9 @@ import React from "react";
 
 const Ready = () => {
   return (
-    <div className="bg-[#EFFAF8] lg:h-[713px] h-[790px] relative mb-28">
+    <div className="bg-[#EFFAF8] lg:h-[650px] h-[790px] relative mb-28 max-h-screen overflow-hidden">
       <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-10 gap-10">
-        <div className="lg:w-[50%] w-full flex flex-col lg:h-[500px] lg:justify-between">
+        <div className="lg:w-[50%] w-full flex flex-col lg:h-[480px] lg:justify-between">
           <div>
             <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto ">
               Real-World Ready. Even Without Internet.
@@ -18,8 +18,8 @@ const Ready = () => {
             </p>
           </div>
 
-          <div className="lg:flex lg:w-[510px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center">
-            <div className="lg:w-[230px] w-auto">
+          <div className="lg:flex lg:w-[600px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center">
+            <div className="lg:w-[250px] w-auto">
               <h4 className="lg:text-[22px] text-[24px] font-[700]">
                 Get Paid Without Data
               </h4>
@@ -28,7 +28,7 @@ const Ready = () => {
               </p>
             </div>
             <div className="mt-1 lg:block hidden">|</div>
-            <div className="lg:w-[230px] w-auto lg:mt-0 mt-5">
+            <div className="lg:w-[250px] w-auto lg:mt-0 mt-5">
               <h4 className="lg:text-[22px] text-[24px] font-[700]">
                 Instant Confirmation
               </h4>
@@ -43,8 +43,8 @@ const Ready = () => {
             src="/bga.svg"
             alt="hand"
             height={600}
-            width={850}
-            className="w-[850px] h-[530px]"
+            width={650}
+            className="w-[700px] h-[530px] object-contain"
           />
         </div>
       </div>
