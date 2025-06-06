@@ -7,7 +7,7 @@ const Smart = () => {
       <h1 className="font-[700] lg:text-[40px] text-[30px] text-center my-12 ">
         Smart QR Payments — Built for Any Scenario
       </h1>
-      <div className="lg:flex block gap-10 lg:mx-0 mx-6">
+      <div className="lg:flex block justify-center gap-10 lg:mx-0 mx-6">
         <div className="bg-[#FAFAFA] lg:w-[360px] w-auto lg:h-[378px] h-[350px] rounded-lg lg:px-5 px-8 lg:pt-20 pt-14 lg:m-0 m-auto lg:mt-0 mt-10">
           <Image
             src="/framea.svg"
@@ -55,7 +55,7 @@ const Smart = () => {
         </div>
       </div>
       {/* Smart QR Generator */}
-      <div className="lg:flex block justify-between lg:mt-40 mt-10">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-40 mt-10">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
@@ -73,7 +73,7 @@ const Smart = () => {
       </div>
 
       {/* Dynamic Checkout Builder */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-16">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-16">
         <div className="lg:hidden block">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
@@ -105,7 +105,7 @@ const Smart = () => {
         </div>
       </div>
       {/* Auto Reconciliation */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-16 lg:mb-40 mb-16">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-16 lg:mb-40 mb-16">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center">
           <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700]">

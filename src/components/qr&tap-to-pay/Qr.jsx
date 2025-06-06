@@ -6,8 +6,8 @@ import Image from "next/image";
 const Qr = () => {
   return (
     <div>
-      <div className="lg:pt-40 pt-24">
-        <div className="lg:flex block gap-12">
+      <div className="lg:pt-32 pt-24">
+        <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[520px] w-auto">
             <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center ">
               QRs That Do More Than Just Take Payments{" "}

@@ -5,7 +5,7 @@ const Virtual = () => {
   return (
     <div>
       {/* Virtual Accounts for Each Payer */}
-      <div className="lg:flex block justify-between lg:mt-40 mt-14">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-40 mt-14">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
@@ -24,7 +24,7 @@ const Virtual = () => {
       </div>
 
       {/* QR & Wallet-Based Payments */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-16">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-16">
         <div className="lg:hidden block">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
@@ -58,7 +58,7 @@ const Virtual = () => {
         </div>
       </div>
       {/* Field Agent Monitoring */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-20 lg:mb-40 mb-16">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-20 lg:mb-40 mb-16">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center lg:w-[487px] w-auto">
           <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700]">

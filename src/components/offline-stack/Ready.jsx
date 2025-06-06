@@ -3,8 +3,8 @@ import React from "react";
 
 const Ready = () => {
   return (
-    <div className="bg-[#EFFAF8] lg:h-[700px] h-[790px] relative mb-28">
-      <div className="flex lg:pl-28 pl-5 lg:pr-0 pr-5 lg:pt-28 pt-10 gap-10">
+    <div className="bg-[#EFFAF8] lg:h-[713px] h-[790px] relative mb-28">
+      <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-10 gap-10">
         <div className="lg:w-[50%] w-full flex flex-col lg:h-[500px] lg:justify-between">
           <div>
             <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto ">
@@ -18,23 +18,27 @@ const Ready = () => {
             </p>
           </div>
 
-          <div className="lg:flex lg:w-[520px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center">
+          <div className="lg:flex lg:w-[510px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center">
             <div className="lg:w-[230px] w-auto">
-              <h4 className="lg:text-[22px] text-[24px] font-[700]">Get Paid Without Data</h4>
+              <h4 className="lg:text-[22px] text-[24px] font-[700]">
+                Get Paid Without Data
+              </h4>
               <p className="lg:mt-5 mt-2 text-[16px]">
                 Accept Bluetooth or QR-based payments—no data required
               </p>
             </div>
             <div className="mt-1 lg:block hidden">|</div>
             <div className="lg:w-[230px] w-auto lg:mt-0 mt-5">
-              <h4 className="lg:text-[22px] text-[24px] font-[700]">Instant Confirmation</h4>
+              <h4 className="lg:text-[22px] text-[24px] font-[700]">
+                Instant Confirmation
+              </h4>
               <p className="lg:mt-5 mt-2 text-[16px]">
                 Confirm transactions instantly, right on your phone{" "}
               </p>
             </div>{" "}
           </div>
         </div>
-        <div className=" w-[92%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
+        <div className=" w-[88%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
           <Image
             src="/bga.svg"
             alt="hand"

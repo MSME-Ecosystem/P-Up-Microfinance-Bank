@@ -5,7 +5,7 @@ const Onetime = () => {
   return (
     <div>
       {/* One-Time Verification */}
-      <div className="lg:flex block justify-between lg:mt-40 mt-16">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-40 mt-16">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
@@ -13,7 +13,7 @@ const Onetime = () => {
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             One-Time Verification{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 lg:w-[464px] w-auto">
             Merchants register once to get verified across platforms—no
             duplication, no confusion.
           </p>
@@ -24,7 +24,7 @@ const Onetime = () => {
       </div>
 
       {/* Public Trust Profile */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-10">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-10">
         <div className="lg:hidden block">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring

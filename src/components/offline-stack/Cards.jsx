@@ -4,7 +4,7 @@ import React from "react";
 const Cards = () => {
   return (
     <div className="text-black">
-      <div className="lg:flex block lg:px-4 px-0 lg:pt-28 pt-12 gap-8 lg:pb-30 pb-8">
+      <div className="lg:flex block justify-center lg:px-4 px-0 lg:pt-28 pt-12 gap-5 lg:pb-30 pb-8">
         <div className="lg:w-[360px] w-auto lg:h-[360px] h-[350px] bg-[#F3F5F7] lg:px-4 px-6 pt-1 lg:m-0 m-6 rounded-lg">
           <div className="">
             <Image

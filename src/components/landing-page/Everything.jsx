@@ -36,7 +36,7 @@ const Everything = () => {
             Flexible checkout built for merchants — supporting logic-based
             routing, embedded flows, fees, commissions, and more.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-10 mt-5">
+          <Button asChild className="bg-[#0F226B] text-white h-10 mt-5 lg:w-auto w-full">
             <Link href="#">Try Checkout</Link>
           </Button>
         </div>
@@ -52,7 +52,7 @@ const Everything = () => {
             reconcile payments—entirely offline. Built for markets where
             internet isn’t guaranteed but business must go on.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-10 mt-5">
+          <Button asChild className="bg-[#0F226B] text-white h-10 mt-5 lg:w-auto w-full">
             <Link href="/offline-stack">Offline stack</Link>
           </Button>
         </div>

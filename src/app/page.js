@@ -11,7 +11,7 @@ const page = () => {
     <div>
       <Hero />
 
-      <div className="px-5 lg:px-32 text-[#000000]">
+      <div className="px-5 lg:px-40 text-[#000000]">
         <Everything />
         <Purpose />
         <Built />

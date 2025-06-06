@@ -4,7 +4,7 @@ import Image from "next/image";
 const Built = () => {
   return (
     <div className="bg-[#EFFAF8] lg:h-[753px] h-[790px] relative mb-28 overflow-hidden">
-      <div className="flex lg:pl-28 pl-5 lg:pr-0 pr-5 lg:pt-8 pt-10 gap-10">
+      <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-8 pt-10 gap-10">
         <div className="lg:w-[50%] w-full flex flex-col lg:h-[600px] lg:justify-between justify-center">
           <div>
             <p className="text-[16px] lg:py-12 py-4 lg:text-left text-center">Use Case</p>
@@ -39,7 +39,7 @@ const Built = () => {
             </div>{" "}
           </div>
         </div>
-        <div className=" w-[97%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
+        <div className=" w-[95%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
           <Image
             src="/bga.svg"
             alt="hand"

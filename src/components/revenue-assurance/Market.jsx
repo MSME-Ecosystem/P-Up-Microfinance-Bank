@@ -4,8 +4,8 @@ import React from "react";
 const Market = () => {
   return (
     <div>
-      <div className="bg-[#EFFAF8] lg:h-[753px] h-[770px] relative mb-28 overflow-hidden">
-        <div className="flex lg:pl-28 pl-5 lg:pr-0 pr-5 lg:pt-28 pt-12 gap-10">
+      <div className="bg-[#EFFAF8] lg:h-[753px] h-[800px] relative mb-28 overflow-hidden">
+        <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-12 gap-10">
           <div className="lg:w-[50%] w-full flex flex-col lg:h-[530px] lg:justify-between justify-center">
             <div>
               <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto ">
@@ -28,7 +28,7 @@ const Market = () => {
               </div>{" "}
             </div>
           </div>
-          <div className=" w-[97%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
+          <div className=" w-[95%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
             <Image
               src="/bga.svg"
               alt="hand"

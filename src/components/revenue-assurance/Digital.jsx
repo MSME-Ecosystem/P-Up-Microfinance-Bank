@@ -7,8 +7,8 @@ const Digital = () => {
   return (
     <div>
         {/* Digital Levies */}
-        <div className="lg:pt-40 pt-30">
-        <div className="lg:flex block gap-12">
+        <div className="lg:pt-32 pt-30">
+        <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[540px] w-auto">
             <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center lg:w-[560px] w-auto ">
             Digital Levies. Accountable Collections. Zero Paperwork            </p>
@@ -32,7 +32,7 @@ const Digital = () => {
       </div>
 
         {/* Cards */}
-        <div className="lg:flex block gap-10 lg:mx-0 mx-6 lg:mt-28 mt-12">
+        <div className="lg:flex block justify-center gap-10 lg:mx-0 mx-6 lg:mt-28 mt-12">
                 <div className="bg-[#FAFAFA] lg:w-[360px] w-auto lg:h-[378px] h-[350px] rounded-lg lg:px-5 px-8 lg:pt-20 pt-14 lg:m-0 m-auto lg:mt-0 mt-10">
                   <Image
                     src="/boxa.svg"

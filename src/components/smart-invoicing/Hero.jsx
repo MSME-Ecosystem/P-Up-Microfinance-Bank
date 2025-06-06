@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="py-28 lg:flex lg:flex-row flex-col-reverse gap-16 items-center justify-center">
-      <div>
+    <div className="py-36 lg:flex lg:flex-row flex-col-reverse gap-16 justify-center">
+      <div className="lg:pt-10 pt-0">
         <h1 className="lg:text-[48px] text-[33px] font-bold lg:w-[510px] w-auto leading-tight">
           Send Smarter Invoices. Get Paid Without the Guesswork
         </h1>
-        <p className="text-[#1b1b1b] lg:w-[510px] w-auto">
+        <p className="text-[#1b1b1b] lg:w-[510px] w-auto pt-3">
           Whether you're a solo freelancer or a busy micro-merchant, InvoIQ
           helps you track payments, send branded invoices, and know exactly who
           owes what—without spreadsheets or finance teams.

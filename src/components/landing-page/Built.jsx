@@ -3,7 +3,7 @@ import React from "react";
 
 const Built = () => {
   return (
-    <div className="py-10">
+    <div className="lg:py-10 py-0">
       <div>
         <h1 className="lg:text-[40px] text-[27px] font-bold text-center text-[#000000] leading-tight lg:w-[718px] w-auto mx-auto">
           Built for the Real World. Engineered for Any Condition

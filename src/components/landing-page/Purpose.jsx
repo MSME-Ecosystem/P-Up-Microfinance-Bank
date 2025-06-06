@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Purpose = () => {
   return (
-    <div className="py-24">
+    <div className="lg:py-24 py-1">
       <div>
         <h1 className="lg:text-[40px] text-[30px] font-bold leading-tight lg:w-[644px] w-auto">
           Purpose-Built Modules to Power Every Layer of Your Financial Stack
@@ -36,7 +36,7 @@ const Purpose = () => {
           </p>
           <Button
             asChild
-            className="bg-[#0F226B] text-[12px] text-white h-10 mt-5 px-6"
+            className="bg-[#0F226B] text-[12px] text-white h-10 mt-5 px-6 lg:w-auto w-full"
           >
             <Link href="/reconsilex">View ReconcileX</Link>
           </Button>

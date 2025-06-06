@@ -35,7 +35,7 @@ export function Navbar() {
         {
           name: "ReconcileX",
           description: "Automated reconciliation & smart accounting",
-          href: "/reconcilex",
+          href: "/reconcile-x",
           image: "/dropdown-logo.svg",
         },
         {

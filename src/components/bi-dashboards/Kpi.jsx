@@ -5,15 +5,15 @@ const Kpi = () => {
   return (
     <div>
       {/* Clear KPIs */}
-      <div className="lg:flex block justify-between lg:mt-40 mt-16">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-40 mt-16">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
           </p>
-          <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
+          <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Clear KPIs Without the Jargon{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 text-[#1B1B1B] lg:w-[464px] w-auto">
             Instantly view revenue, expenses, profit, and cash flow in a
             mobile-friendly dashboard.{" "}
           </p>
@@ -24,15 +24,15 @@ const Kpi = () => {
       </div>
 
       {/* Visual Reports for Non-Numbers People */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-10">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-10">
         <div className="lg:hidden block">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
           </p>
-          <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
+          <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Visual Reports for Non-Numbers People{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 text-[#1B1B1B]">
             Pie charts, trend lines, bar graphs—all automatically generated for
             easier decisions and presentations.{" "}
           </p>

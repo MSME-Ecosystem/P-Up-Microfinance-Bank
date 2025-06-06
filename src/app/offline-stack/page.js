@@ -1,3 +1,4 @@
+import GetStarted from "@/components/landing-page/GetStarted";
 import Cards from "@/components/offline-stack/Cards";
 import Power from "@/components/offline-stack/Power";
 import Ready from "@/components/offline-stack/Ready";
@@ -10,8 +11,10 @@ const page = () => {
         <Power />
         <Cards />
       </div>
-
       <Ready />
+      <div className="lg:px-40 px-5">
+        <GetStarted />
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Trust = () => {
   return (
     <div>
       {/* Trust-Linked Payments */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-10">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-10">
         <div className="lg:h-[440px] h-auto flex flex-col justify-center w-[487px]">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
@@ -24,7 +24,7 @@ const Trust = () => {
       </div>
 
       {/* Verified Badges */}
-      <div className="lg:flex block justify-between lg:mt-28 mt-10">
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-28 mt-10">
         <div className="lg:hidden block">
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring

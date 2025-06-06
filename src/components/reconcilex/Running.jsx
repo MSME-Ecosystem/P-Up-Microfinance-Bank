@@ -4,12 +4,12 @@ import React from "react";
 const Running = () => {
   return (
     <div>
-      <div className="bg-[#EFFAF8] lg:h-[712px] h-[865px]  mb-24">
-        <div className="flex lg:pl-28 pl-5 lg:pr-0 pr-5 lg:pt-28 pt-12 gap-10">
+      <div className="bg-[#EFFAF8] lg:h-[712px] h-[890px]  mb-24">
+        <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-12 gap-10">
           <div className="lg:w-[50%] flex flex-col lg:h-[500px] lg:justify-between">
             <div>
-              <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[576px] w-auto  leading-12 lg:text-left text-center lg:pl-0 pl-5 lg:m-0 m-auto  ">
-              Running on Odoo, QuickBooks, or a custom ERP? ReconcileX plugs right in.              </h1>
+              <h1 className="font-[700] lg:text-[40px] text-[28px] lg:w-[576px] w-auto  leading-tight lg:text-left text-center lg:pl-0 pl-5 lg:m-0 m-auto  ">
+              Running on Odoo, QuickBooks, or a custom ERP? ReconcileX plugs right in.</h1>
               <p className="text-[16px] lg:w-[510px] w-auto mt-8 lg:text-left text-center  ">
               No more manual checks. No more messy spreadsheets. Just accurate, real-time reconciliation.
               </p>
@@ -31,13 +31,13 @@ const Running = () => {
               </div>{" "}
             </div>
           </div>
-          <div className=" w-[92%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
+          <div className=" w-[88%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
             <Image
               src="/phone.svg"
               alt="hand"
               height={600}
               width={850}
-              className="w-[600px] h-[530px]"
+              className="w-[600px] h-[580px]"
             />
           </div>
         </div>

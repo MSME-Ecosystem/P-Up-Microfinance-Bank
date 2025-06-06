@@ -4,7 +4,7 @@ import Image from "next/image";
 const Built = () => {
   return (
     <div className="bg-[#EFFAF8] lg:h-[753px] h-[790px] relative mb-28 overflow-hidden lg:mt-28 mt-16">
-      <div className="flex lg:pl-28 pl-5 lg:pr-0 pr-5 lg:pt-8 pt-12 gap-10">
+      <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-8 pt-12 gap-10">
         <div className="lg:w-[50%] w-full flex flex-col lg:h-[600px] lg:justify-between justify-center">
           <div>
             <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto lg:mt-12 mt-6">
@@ -31,7 +31,7 @@ const Built = () => {
             </div>{" "}
           </div>
         </div>
-        <div className=" w-[97%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
+        <div className=" w-[95%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
           <Image
             src="/bga.svg"
             alt="hand"

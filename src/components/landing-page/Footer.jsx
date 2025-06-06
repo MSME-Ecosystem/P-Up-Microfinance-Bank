@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Footer() {
   const usecaseLinks = [
-    { name: "ReconcileX", href: "/reconcilex" },
+    { name: "ReconcileX", href: "/reconcile-x" },
     { name: "Offline Stack", href: "/offline-stack" },
     { name: "Smart checkout", href: "/smart-checkout" },
     { name: "Embedded Finance", href: "/embedded-finance" },

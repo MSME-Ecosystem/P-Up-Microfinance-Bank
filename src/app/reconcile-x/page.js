@@ -1,3 +1,4 @@
+import GetStarted from "@/components/landing-page/GetStarted";
 import Automate from "@/components/reconcilex/Automate";
 import Cards from "@/components/reconcilex/Cards";
 import Running from "@/components/reconcilex/Running";
@@ -10,8 +11,10 @@ const page = () => {
         <Automate />
         <Cards />
       </div>
-
       <Running />
+       <div className="lg:px-40 px-5">
+        <GetStarted />
+      </div>
     </div>
   );
 };

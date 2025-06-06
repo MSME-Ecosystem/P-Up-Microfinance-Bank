@@ -4,7 +4,7 @@ import React from "react";
 const Ready = () => {
   return (
     <div className="bg-[#EFFAF8] lg:h-[712px] h-[790px] relative mb-28 w-full mt-24">
-      <div className="flex lg:pl-28 pl-5 lg:pr-0 pr-5 lg:pt-28 pt-10 gap-10">
+      <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-10 gap-10">
         <div className="lg:w-[50%] w-full flex flex-col lg:h-[500px] lg:justify-between">
           <div>
             <h1 className="font-[700] lg:text-[40px] text-[28px] lg:w-[450px] w-auto lg:text-left text-center leading-tight lg:m-0 m-auto ">
@@ -35,7 +35,7 @@ const Ready = () => {
             </div>{" "}
           </div>
         </div>
-        <div className=" w-[92.5%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
+        <div className=" w-[88.5%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
           <Image
             src="/hands.svg"
             alt="hand"
