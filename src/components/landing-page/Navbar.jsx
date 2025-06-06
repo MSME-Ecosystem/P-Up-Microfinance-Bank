@@ -89,13 +89,13 @@ export function Navbar() {
         {
           name: "Wallets & Escrow",
           description: "Role-based wallets, controls, and cashier flows",
-          href: "/wallets&escrow",
+          href: "/wallet-and-escrow",
           image: "/dropdown-logo.svg",
         },
         {
           name: "AgentIQ",
           description: "Dashboard for field agents & territory sync",
-          href: "/agent-iq",
+          href: "/agent",
           image: "/dropdown-logo.svg",
         },
         {
