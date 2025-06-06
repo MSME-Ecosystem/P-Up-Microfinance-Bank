@@ -1,12 +1,19 @@
-import Power from '@/components/offline-stack/Power'
-import React from 'react'
+import Cards from "@/components/offline-stack/Cards";
+import Power from "@/components/offline-stack/Power";
+import Ready from "@/components/offline-stack/Ready";
+import React from "react";
 
 const page = () => {
   return (
-    <div>
-        <Power/>
-    </div>
-  )
-}
+    <div className="text-black">
+      <div className="lg:px-24 px-5 ">
+        <Power />
+        <Cards />
+      </div>
 
-export default page
+      <Ready />
+    </div>
+  );
+};
+
+export default page;
