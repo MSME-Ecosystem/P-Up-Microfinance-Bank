@@ -49,11 +49,11 @@ const Virtual = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
-            Automated Money Movement{" "}
+          QR & Wallet-Based Payments{" "}
           </h2>
           <p className="text-[16px] text-[#1B1B1B] w-[462px]">
-            Schedule or trigger internal transfers based on conditions—like
-            commissions, repayments, or contributions.{" "}
+          Accept payments via mobile wallet, bank transfer, or QR scan—even
+          with no internet. Syncs automatically when back online.{" "}
           </p>
         </div>
       </div>

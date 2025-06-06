@@ -3,11 +3,11 @@ import React from "react";
 
 const SafeHands = () => {
   return (
-    <div className="lg:pb-24 pb-12 lg:px-4 px-0">
+    <div className="lg:pb-24 pb-12 lg:px-4 px-0 lg:mt-32">
       <h1 className="font-[700] lg:text-[40px] text-[30px] text-center my-12 ">
         What SafeHands Enables
       </h1>
-      <div className="lg:flex  block gap-10 lg:mx-0 mx-6">
+      <div className="lg:flex  block gap-10 lg:mx-0 mx-6 justify-center">
         <div className="bg-[#FAFAFA] lg:w-[360px] w-auto lg:h-[378px] h-[350px] rounded-lg lg:px-5 px-8 lg:pt-20 pt-14 lg:m-0 m-auto lg:mt-0 mt-10">
 
           <div className="flex justify-center">

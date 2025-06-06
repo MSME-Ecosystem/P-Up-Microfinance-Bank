@@ -1,35 +1,24 @@
 import Image from "next/image";
-import React from "react"; 
+import React from "react";
 
 const Order = () => {
   return (
-    <div className="pb-24 ">
-
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-
-        <div className="flex flex-col items-start  md:w-1/2 w-full ">
-          <h1 className="py-5 text-[16px] leading-tight">
-            Featuring
-          </h1>
-          <h1 className="text-[28px] text-[#0171DF] font-bold leading-tight">
+    <div>
+      <div className="lg:flex block justify-center lg:gap-[170px] mt-12 lg:mb-20 mb-10">
+        <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center lg:w-[487px] w-auto">
+          <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
+          <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] text-nowrap">
             Order-by-Order Reconciliation
-          </h1>
-          <p className="text-[#1B1B1B] text-[14px] mt-4 pr-5">
-         Each merchant receives a detailed breakdown of items bought, including quantity, value, and buyer details </p>
-           
+          </h2>
+          <p className="text-[16px] lg:mb-0 mb-4 lg:w-[462px] w-auto">
+            Each merchant receives a detailed breakdown of items bought,
+            including quantity, value, and buyer details{" "}
+          </p>
         </div>
-
-        <div className="w-full md:w-1/2 flex md:pr-8">
-          <Image
-            src="/Image_fx1.png"
-            alt="Order"
-           width={350}
-            height={326}
-            className="rounded-md max-w-full h-auto"
-          />
+        <div>
+          <Image src="/Image_fx1.png" alt="POS" height={442} width={495} className="rounded-md" />
         </div>
       </div>
-
     </div>
   );
 };

@@ -1,35 +1,26 @@
 import Image from "next/image";
-import React from "react"; 
+import React from "react";
 
 const Order = () => {
   return (
-    <div className="pb-24 ">
-
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-
-        <div className="flex flex-col items-start  md:w-1/2 w-full ">
-          <h1 className="py-5 text-[16px] leading-tight">
+    <div>
+      <div className="lg:flex block justify-center lg:gap-[170px] lg:mt-20 mt-10">
+        <div className="lg:h-[440px] h-auto flex flex-col justify-center">
+          <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
-          </h1>
-          <h1 className="text-[28px] text-[#0171DF] font-bold leading-tight">
-           Cashier Wallets
-          </h1>
-          <p className="text-[#1B1B1B] text-[14px] mt-4 pr-5">
-         Hold or release funds based on role, approval, or reconciliation status.</p>
-           
+          </p>
+          <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
+            Cashier Wallets
+          </h2>
+          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+            Hold or release funds based on role, approval, or reconciliation
+            status.{" "}
+          </p>
         </div>
-
-        <div className="w-full md:w-1/2 flex md:pr-8">
-          <Image
-            src="/cw.png"
-            alt="Order"
-           width={350}
-            height={326}
-            className="rounded-md max-w-full h-auto"
-          />
+        <div>
+          <Image src="/cw.png" alt="POS" height={442} width={495} />
         </div>
       </div>
-
     </div>
   );
 };
