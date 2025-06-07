@@ -18,7 +18,7 @@ const Built = () => {
             </p>
           </div>
 
-          <div className="lg:flex lg:w-[625px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center justify-between">
+          <div className="lg:flex lg:w-[625px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center justify-between z-50">
             <div className="lg:w-[250px] w-auto">
               <h4 className="lg:text-[22px] text-[24px] font-[700]">
                 Contactless Checkout

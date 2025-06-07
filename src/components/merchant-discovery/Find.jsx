@@ -16,7 +16,7 @@ const Find = () => {
             Whether online or offline, CrediFind helps you verify any seller before you pay. No storefront? No problem. One scan shows their history, rating, and real-time trust score.
             </p>
             <Button asChild className="bg-[#0F226B] text-white h-10">
-              <Link href="/auth/register">Get Started</Link>
+              <Link href="#">Get Started</Link>
             </Button>{" "}
           </div>
           <div className="lg:mt-0 mt-10">

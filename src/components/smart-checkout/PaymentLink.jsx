@@ -28,7 +28,7 @@ const PaymentLink = () => {
             asChild
             className="bg-[#0F226B] text-white h-10 mt-5 lg:mt-10 lg:w-auto w-full"
           >
-            <Link href="/auth/register">Get started</Link>
+            <Link href="#">Get started</Link>
           </Button>
         </div>
         <div className="lg:mt-0 mt-10 lg:flex hidden">
@@ -59,7 +59,7 @@ const PaymentLink = () => {
             splits and reconciles payments automatically.
           </p>
           <Button asChild className="bg-[#0F226B] text-white h-10 mt-10 lg:w-auto w-full">
-            <Link href="/auth/register">Get started</Link>
+            <Link href="#">Get started</Link>
           </Button>
         </div>
       </div>
@@ -82,7 +82,7 @@ const PaymentLink = () => {
             checkout, tailored to buyer preferences.
           </p>
           <Button asChild className="bg-[#0F226B] text-white h-10 mt-10 lg:w-auto w-full">
-            <Link href="/auth/register">Get started</Link>
+            <Link href="#">Get started</Link>
           </Button>
         </div>
         <div className="lg:flex hidden">
@@ -113,7 +113,7 @@ const PaymentLink = () => {
             chat, PoS terminals, and offline sync environments.
           </p>
           <Button asChild className="bg-[#0F226B] text-white h-10 mt-10 lg:w-auto w-full">
-            <Link href="/auth/register">Get started</Link>
+            <Link href="#">Get started</Link>
           </Button>
         </div>
       </div>

@@ -115,7 +115,7 @@ export function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center bg-[#F0FAF8]">
+    <header className="fixed top-0 left-0 right-0 z-1000 h-[70px] flex items-center bg-[#F0FAF8]">
       <div className="container mx-auto px-4 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
@@ -143,7 +143,7 @@ export function Navbar() {
                     <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
                   {openDropdown === item.name && (
-                    <div className="absolute top-full left-0 mt-0 w-[800px] bg-[#F0FAF8] rounded-md shadow-lg z-50 p-6 -translate-x-1/4">
+                    <div className="absolute top-full left-0 mt-0 w-[800px] bg-[#F0FAF8] z-1000 rounded-md shadow-lg p-6 -translate-x-1/4">
                       <div className="grid grid-cols-3 gap-6">
                         {item.dropdown.map((subItem) => (
                           <Link
@@ -192,10 +192,10 @@ export function Navbar() {
               asChild
               className="border border-[#0F226B] bg-transparent text-[#0F226B] h-10"
             >
-              <Link href="/auth/login">Sign in</Link>
+              <Link href="#">Sign in</Link>
             </Button>
             <Button asChild className="bg-[#0F226B] text-white h-10">
-              <Link href="/auth/register">Register</Link>
+              <Link href="#">Register</Link>
             </Button>
           </div>
 
@@ -280,13 +280,13 @@ export function Navbar() {
                   variant="ghost"
                   className="justify-center border border-[#0F226B] text-[#000000]"
                 >
-                  <Link href="/auth/login" onClick={() => setIsMenuOpen(false)}>
+                  <Link href="#" onClick={() => setIsMenuOpen(false)}>
                     Sign in
                   </Link>
                 </Button>
                 <Button asChild className="bg-[#0F226B] text-white">
                   <Link
-                    href="/auth/register"
+                    href="#"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Register

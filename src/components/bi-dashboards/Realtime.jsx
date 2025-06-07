@@ -20,7 +20,7 @@ const Realtime = () => {
               spreadsheets. Just clarity.
             </p>
             <Button asChild className="bg-[#0F226B] text-white h-10">
-              <Link href="/auth/register">Get Started</Link>
+              <Link href="#">Get Started</Link>
             </Button>{" "}
           </div>
           <div className="lg:mt-0 mt-10">

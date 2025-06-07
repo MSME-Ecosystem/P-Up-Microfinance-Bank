@@ -15,7 +15,7 @@ const Market = () => {
               </p>
             </div>
 
-            <div className="lg:flex lg:w-[635px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center justify-between">
+            <div className="lg:flex lg:w-[635px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center justify-between z-50">
               <div className="lg:w-[300px] w-auto">
                 <h4 className="lg:text-[22px] text-[24px] font-[700]">
                 Multi-Level Reporting (Ward, Sector, Agent)                </h4>

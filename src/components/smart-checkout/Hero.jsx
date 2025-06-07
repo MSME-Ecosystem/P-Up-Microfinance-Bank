@@ -16,7 +16,7 @@ const Hero = () => {
           platforms—through a single, seamless interface.
         </p>
         <Button asChild className="bg-[#0F226B] text-white h-10 mt-5 lg:mt-10 w-full ">
-          <Link href="/auth/register">Get started</Link>
+          <Link href="#">Get started</Link>
         </Button>
       </div>
       <div className="lg:mt-0 mt-10">

@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-center mt-6">
           <Button asChild className="bg-[#0F226B] text-white h-10">
-            <Link href="/auth/register">Get started</Link>
+            <Link href="#">Get started</Link>
           </Button>
         </div>
       </div>

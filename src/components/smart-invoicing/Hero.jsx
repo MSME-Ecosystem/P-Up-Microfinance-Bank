@@ -16,7 +16,7 @@ const Hero = () => {
           owes what—without spreadsheets or finance teams.
         </p>
         <Button asChild className="bg-[#0F226B] text-white h-10 mt-5 lg:mt-10 lg:w-auto w-full">
-          <Link href="/auth/register">Get started</Link>
+          <Link href="#">Get started</Link>
         </Button>
       </div>
       <div className="lg:mt-0 mt-10">

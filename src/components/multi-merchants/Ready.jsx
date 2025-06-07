@@ -19,7 +19,7 @@ const Ready = () => {
             </p>
           </div>
 
-          <div className="lg:flex  gap-10  mt-12  mb-20 z-10">
+          <div className="lg:flex  gap-10  mt-12  mb-20 z-50">
             <div className=" mb-5 lg:mb-0">
               <h4 className="lg:text-[22px] text-[24px] font-[700]">
                 No missed commissions

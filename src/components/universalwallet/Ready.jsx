@@ -18,7 +18,7 @@ const Ready = () => {
             </p>
           </div>
 
-          <div className="lg:flex lg:w-[48%] gap-10  mt-12  mb-10 z-10">
+          <div className="lg:flex lg:w-[48%] gap-10  mt-12  mb-10 z-50">
             <div className=" mb-5 lg:mb-0">
               <h4 className="lg:text-[22px] text-[24px] font-[700] text-nowrap">
                 Boosted Customer Loyalty

@@ -18,7 +18,7 @@ const Ready = () => {
             </p>
           </div>
 
-          <div className="lg:flex lg:w-[600px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center">
+          <div className="lg:flex lg:w-[600px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center z-50">
             <div className="lg:w-[250px] w-auto">
               <h4 className="lg:text-[22px] text-[24px] font-[700]">
                 Get Paid Without Data
