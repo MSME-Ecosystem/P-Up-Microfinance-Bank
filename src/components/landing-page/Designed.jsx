@@ -3,7 +3,7 @@ import React from "react";
 
 const Designed = () => {
   return (
-    <div className="lg:py-24 py-16">
+    <div className="lg:py-20 py-16">
       <div>
         <h1 className="lg:text-[40px] text-[27px] font-bold leading-tight lg:w-[644px] w-auto">
           Designed for Every Operator in the Financial Stack

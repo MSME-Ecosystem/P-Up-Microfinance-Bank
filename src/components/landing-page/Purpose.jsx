@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Purpose = () => {
   return (
-    <div className="lg:py-24 py-1">
+    <div className="lg:py-5 py-1">
       <div>
         <h1 className="lg:text-[40px] text-[30px] font-bold leading-tight lg:w-[644px] w-auto">
           Purpose-Built Modules to Power Every Layer of Your Financial Stack
@@ -38,7 +38,7 @@ const Purpose = () => {
             asChild
             className="bg-[#0F226B] text-[12px] text-white h-10 mt-5 px-6 lg:w-auto w-full"
           >
-            <Link href="/reconsilex">View ReconcileX</Link>
+            <Link href="/reconcile-x">View ReconcileX</Link>
           </Button>
         </div>
       </div>
@@ -50,7 +50,7 @@ const Purpose = () => {
         </h1>
         <p className="lg:w-[462px] w-auto mx-auto my-4">Flexible checkout built for  — supporting logic-based routing, embedded flows, fees, commissions, and more.</p>
          <Button asChild className="bg-[#0F226B] text-white h-10 mt-5">
-            <Link href="/offline-stack">Try Checkout</Link>
+            <Link href="/smart-checkout">Try Checkout</Link>
           </Button>
       </div>
     </div>

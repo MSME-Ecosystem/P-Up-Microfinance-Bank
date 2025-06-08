@@ -45,7 +45,7 @@ export function Footer() {
             {/* Company Info - Takes 2 columns on large screens */}
             <div className="lg:col-span-2 space-y-6">
               <div>
-                <div className="flex flex-col space-x-3 mb-4">
+                <div className="flex flex-col space-x-3 items-center-center mb-4">
                   <div className="w-16 h-16 flex items-center justify-center">
                     <Image
                       src={"/footer-logo.svg"}
@@ -54,13 +54,11 @@ export function Footer() {
                       height={70}
                     />
                   </div>
-                  <div>
-                    <h3 className="text-[16px] text-[#000000]">
-                      MICRO FINANCE BANK LTD
-                    </h3>
-                  </div>
+                  <h3 className="text-[16px] text-[#000000]">
+                    MICRO FINANCE BANK LTD
+                  </h3>
                 </div>
-                <p className="text-[#000000] text-start lg:text-center mt-5 lg:mt-16">
+                <p className=" text-[#000000] mt-10 mx-12">
                   Contact sales
                 </p>
               </div>
