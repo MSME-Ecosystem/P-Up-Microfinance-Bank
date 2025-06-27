@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const WalletLogic = () => {
   return (
@@ -12,10 +14,16 @@ const WalletLogic = () => {
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Automated Payment Splitting
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4">
             Funds are instantly distributed to each seller’s wallet or bank
             account—no manual work needed.{" "}
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-24 w-full mb-6"
+          >
+            <Link href="#">Split payments</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image
@@ -31,10 +39,16 @@ const WalletLogic = () => {
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
             Automated Payment Splitting
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px]">
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] lg:mb-8 mb-4">
             Funds are instantly distributed to each seller’s wallet or bank
             account—no manual work needed.
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-24"
+          >
+            <Link href="#">Split payments</Link>
+          </Button>{" "}
         </div>
       </div>
     </div>

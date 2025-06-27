@@ -8,13 +8,17 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="text-[#000000]">
       <Hero />
 
-      <div className="px-5 lg:px-40 text-[#000000]">
+      <div className="px-5 lg:px-40 ">
         <Everything />
         <Purpose />
+      </div>
+      <div className="px-5 lg:px-40 ">
         <Built />
+      </div>
+      <div className="px-5 lg:px-40 ">
         <Designed />
         <GetStarted />
       </div>

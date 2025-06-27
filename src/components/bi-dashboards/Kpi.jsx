@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Kpi = () => {
   return (
@@ -13,10 +15,13 @@ const Kpi = () => {
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Clear KPIs Without the Jargon{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 text-[#1B1B1B] lg:w-[464px] w-auto">
+          <p className="text-[16px] lg:text-left text-center  mb-4 text-[#1B1B1B] lg:w-[464px] w-auto">
             Instantly view revenue, expenses, profit, and cash flow in a
             mobile-friendly dashboard.{" "}
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-18 lg:mb-0 mb-6">
+              <Link href="#">View KPIs</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image src="/chart.svg" alt="chart" height={442} width={495} />
@@ -32,10 +37,14 @@ const Kpi = () => {
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Visual Reports for Non-Numbers People{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 text-[#1B1B1B]">
+          <p className="text-[16px] lg:text-left text-center mb-4 text-[#1B1B1B]">
             Pie charts, trend lines, bar graphs—all automatically generated for
             easier decisions and presentations.{" "}
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-18 w-full mb-6">
+              <Link href="#">See Reports</Link>
+            </Button>{" "}
+            
         </div>
         <div>
           <Image
@@ -51,9 +60,12 @@ const Kpi = () => {
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
           Visual Reports for Non-Numbers People{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B]">
+          <p className="text-[16px] text-[#1B1B1B] lg:mb-8 mb-4">
           Pie charts, trend lines, bar graphs—all automatically generated for
           easier decisions and presentations.{" "}          </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-18">
+              <Link href="#">See Reports</Link>
+            </Button>{" "}
         </div>
       </div>
     </div>

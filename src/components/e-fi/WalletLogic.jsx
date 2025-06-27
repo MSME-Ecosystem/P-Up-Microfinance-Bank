@@ -61,12 +61,9 @@ const WalletLogic = () => {
           Create programmable internal wallets with transfer rules, balance
           logic, and sub-wallets.
           </p>
-          <Button
-            asChild
-            className="bg-[#0F226B] text-white text-sm h-10 px-6 mt-6"
-          >
-            <Link href="/login">Build wallet</Link>
-          </Button>
+          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold px-22 ">
+          <Link href="#">Set up wallets</Link>
+        </Button>
         </div>
       </div>
     </div>

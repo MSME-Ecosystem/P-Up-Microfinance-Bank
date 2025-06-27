@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Wallet = () => {
   return (
@@ -13,9 +15,11 @@ const Wallet = () => {
             Wallet + Bank Settlements Per Merchant
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Sellers can choose to receive funds in a digital wallet or direct to
-            their business bank account.
+          Support flexible payouts—whether funds go to field wallets or straight to merchant accounts
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6">
+              <Link href="#">Set Up Payouts</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image
@@ -31,10 +35,12 @@ const Wallet = () => {
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
             Wallet + Bank Settlements Per Merchant
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px]">
-            Sellers can choose to receive funds in a digital wallet or direct to
-            their business bank account.
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] mb-8">
+          Support flexible payouts—whether funds go to field wallets or straight to merchant accounts
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22">
+              <Link href="#">Set Up Payouts</Link>
+            </Button>{" "}
         </div>
       </div>
     </div>

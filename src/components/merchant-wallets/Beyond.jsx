@@ -17,7 +17,7 @@ const Beyond = () => {
               programmable merchant wallets with sub-accounts, smart transfers,
               and fully traceable money flows—no accountants required.
             </p>
-            <Button asChild className="bg-[#0F226B] text-white h-10">
+            <Button asChild className="bg-[#0F226B] text-white h-11 font-bold">
               <Link href="#">Get Started</Link>
             </Button>{" "}
           </div>

@@ -14,7 +14,7 @@ const page = () => {
         <Purpose />
         <SafeHands />
         <Order />
-         <EscrowRules />  
+        <EscrowRules/>
         <ERP />
 
       </div>

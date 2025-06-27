@@ -1,3 +1,5 @@
+import { Button } from "../ui/button";
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
@@ -13,10 +15,13 @@ const Voice = () => {
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Multilingual & Voice-Enabled{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4">
             Team members can interact in local languages or request summaries
             via WhatsApp voice command.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold mb-6">
+              <Link href="#">Learn more</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image src="/algeria.svg" alt="algeria" height={442} width={495} />
@@ -36,6 +41,9 @@ const Voice = () => {
             Download audit-friendly financial summaries with one tap—ideal for
             cooperatives, NGOs, and small teams.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11  font-bold px-18 w-full mb-6">
+              <Link href="#">Export files</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image src="/chartb.svg" alt="chart" height={442} width={495} />
@@ -45,10 +53,13 @@ const Voice = () => {
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
           Exportable Reports for Taxes & Audits{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B]">
+          <p className="text-[16px] text-[#1B1B1B] mb-8">
           Download audit-friendly financial summaries with one tap—ideal for
           cooperatives, NGOs, and small teams.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-18">
+              <Link href="#">Export files</Link>
+            </Button>{" "}
         </div>
       </div>
     </div>

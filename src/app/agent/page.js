@@ -3,7 +3,7 @@ import GetStarted from "@/components/landing-page/GetStarted";
 import Ready from "@/components/agent/Ready";
 import React from "react";
 import Order from "@/components/agent/Order";
-import GPS from "@/components/agent/SmartLink";
+import GPS from "@/components/agent/GPS";
 import MDash from "@/components/agent/MDash";
 import Wallet from "@/components/agent/Wallet";
 

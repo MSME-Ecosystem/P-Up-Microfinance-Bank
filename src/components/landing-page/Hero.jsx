@@ -9,13 +9,13 @@ const Hero = () => {
         <h1 className="lg:text-[48px] text-[30px] font-bold text-center text-[#000000] leading-tight lg:w-[689px] w-auto mx-auto">
           Modern Financial Infrastructure Built for Real-World Commerce
         </h1>
-        <p className="text-center mt-5 text-[14px] lg:w-[510px] w-auto text-[#1B1B1B leading-tight]">
+        <p className="text-center mt-5 lg:w-[510px] w-auto text-[#1B1B1B leading-tight]">
           Power every layer of your financial operations — from offline payments
           to reconciliation, checkout, and embedded finance. <br /> All in one
           stack
         </p>
         <div className="flex justify-center mt-12">
-          <Button asChild className="bg-[#0F226B] text-white h-10">
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold ">
             <Link href="#">Get started</Link>
           </Button>
         </div>

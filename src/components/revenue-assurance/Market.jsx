@@ -1,45 +1,66 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Market = () => {
   return (
     <div>
-      <div className="bg-[#EFFAF8] lg:h-[753px] h-[800px] relative mb-28 overflow-hidden">
-        <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-12 gap-10">
-          <div className="lg:w-[50%] w-full flex flex-col lg:h-[530px] lg:justify-between justify-center">
-            <div>
-              <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto ">
-              From Open Markets to Ministries—Every Naira Accounted For              </h1>
-              <p className="text-[16px] lg:w-[510px] w-auto mt-8 lg:text-left text-center">
-              A typical street vendor pays ₦200 daily levy using a QR code tied to her stall. Local authorities see the exact ward, time, and collection agent—ensuring full transparency without field paperwork.
-              </p>
-            </div>
-
-            <div className="lg:flex lg:w-[635px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center justify-between z-50">
-              <div className="lg:w-[300px] w-auto">
-                <h4 className="lg:text-[22px] text-[24px] font-[700]">
-                Multi-Level Reporting (Ward, Sector, Agent)                </h4>
+      <div className="bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden  lg:pt-10 pt-10 lg:pb-20 lg:mt-40 mt-20">
+        <div className="flex lg:px-40 px-5  ">
+          <div className=" ">
+            <p className=" lg:text-left text-center">Use Case</p>
+            <Button
+              asChild
+              className="bg-[#0171DF] text-white h-10 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+            >
+              <Link href="#">Real - Life Scenario</Link>
+            </Button>{" "}
+            <div className="flex flex-col  ">
+              <div className=" lg:w-[45%] w-full">
+                <div className="flex-1 ">
+                  <p>
+                    <span className="font-bold">Mrs. Ekene,</span> a fruit
+                    vendor in Aba, gets a QR sticker from the LGA labeled “Fruit
+                    Line, Stall 24. Every morning she pays ₦200 levy via wallet
+                    or transfer to her virtual account. The LGA receives{" "}
+                  </p>
+                </div>
               </div>
-              <div className="mt-1 lg:block hidden">|</div>
-              <div className="lg:w-[283px] w-auto lg:mt-0 mt-6">
-                <h4 className="lg:text-[22px] text-[24px] font-[700] ">
-                Virtual Account Generator for Payers
-                </h4>
-              </div>{" "}
+
+              <div className="mt-5">
+                <div className="flex items-end lg:justify-end justify-center lg:w-[20%]  mb-5">
+                  <Image
+                    src="/next-arrow.svg"
+                    alt="next"
+                    height={28}
+                    width={28}
+                    className="rotate-90 "
+                  />
+                </div>
+                <div className="bg-[#E7F7E6] rounded-[10px]  px-12 py-8 w-full lg:w-[45%]">
+                  <ul className="list-disc px-6 space-y-4 py-5 text-[14px]">
+                    <li>The exact stall, ward, time, and agent</li>
+                    <li>An escrowed payment report </li>
+                    <li>Zero paper, zero guesswork</li>
+                    <li>Reconciliation across 15 wards in real time</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div className=" w-[95%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
+          <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute top-0 ">
             <Image
-              src="/bga.svg"
+              src="/newhandb.svg"
               alt="hand"
-              height={700}
-              width={850}
-              className="w-[850px] h-[530px] mt-20"
+              height={900}
+              width={900}
+              className=""
             />
           </div>
         </div>
-        <div className="lg:hidden flex">
-          <Image src="/bga.svg" alt="hand" height={600} width={650} />
+        <div className="lg:hidden flex pt-10">
+          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
         </div>
       </div>
     </div>

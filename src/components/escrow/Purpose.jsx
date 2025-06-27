@@ -6,7 +6,7 @@ import Link from "next/link";
 const Purpose = () => {
   return (
     <div>
-      <div className="lg:pt-32 pt-24">
+      <div className="lg:pt-40 pt-30">
         <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[520px] w-auto">
             <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center ">
@@ -16,7 +16,7 @@ const Purpose = () => {
               Assign wallets, lock funds, and enforce accountability—whether at
               branch level, per cashier, or device-wide.
             </p>
-            <Button asChild className="bg-[#0F226B] text-white h-10">
+            <Button asChild className="bg-[#0F226B] text-white h-11 font-bold">
               <Link href="#">Get Started</Link>
             </Button>{" "}
           </div>

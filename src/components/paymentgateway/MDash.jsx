@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const MDash = () => {
   return (
@@ -16,6 +18,9 @@ const MDash = () => {
             Support collections via QR codes, payment links, PoS, bank
             transfers, and mobile wallets to maximize payment options for users.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold w-full mb-4">
+              <Link href="#">Accept payment</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image
@@ -31,10 +36,13 @@ const MDash = () => {
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
             Multi-Channel Payment Acceptance
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px]">
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] lg:mb-8 mb-4">
             Support collections via QR codes, payment links, PoS, bank
             transfers, and mobile wallets to maximize payment options for users.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-20">
+              <Link href="#">Accept payment</Link>
+            </Button>{" "}
         </div>
       </div>
     </div>
