@@ -18,7 +18,7 @@ const Power = () => {
               reconcile payments—entirely offline. Built for markets where
               internet isn't guaranteed but business must go on.
             </p>
-            <Button asChild className="bg-[#0F226B] text-white h-10">
+            <Button asChild className="bg-[#0F226B] text-white h-11 font-bold">
               <Link href="#">Get Started</Link>
             </Button>{" "}
           </div>

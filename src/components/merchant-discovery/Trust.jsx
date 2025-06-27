@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Trust = () => {
   return (
@@ -13,10 +15,13 @@ const Trust = () => {
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Trust-Linked Payments{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4">
             SmartLinks, QR codes, and checkouts carry merchant trust badges and
             scores—right at point of payment.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 lg:mb-0 mb-6">
+              <Link href="#">Share Trusted Link</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image src="/phoneb.svg" alt="phone" height={442} width={495} />
@@ -35,6 +40,9 @@ const Trust = () => {
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
           Dynamic badges display real merchant activity like “Reconciled 1,000+ Orders” or “Verified by 3 Platforms.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6">
+              <Link href="#">Verified Badges</Link>
+            </Button>{" "}
         </div>
         <div>
           <Image src="/manb.svg" alt="man" height={442} width={495} />
@@ -44,10 +52,13 @@ const Trust = () => {
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
           Verified Badges{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B]">
+          <p className="text-[16px] text-[#1B1B1B] mb-8">
           Dynamic badges display real merchant activity like “Reconciled 1,000+ Orders” or “Verified by 3 Platforms.
 
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 ">
+              <Link href="#">Verified Badges</Link>
+            </Button>{" "}
         </div>
       </div>
     </div>

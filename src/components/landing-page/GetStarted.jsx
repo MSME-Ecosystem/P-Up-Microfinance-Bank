@@ -9,7 +9,7 @@ const GetStarted = () => {
         <h1 className="lg:text-[40px] text-[27px] font-bold text-white lg:w-[624px] w-auto leading-tight">
           Let’s Build the Future of Financial Infrastructure
         </h1>
-        <Button asChild className="bg-[#0F226B] text-white h-10 mt-8">
+        <Button asChild className="bg-[#0F226B] text-white h-10 mt-8 font-bold ">
           <Link href="#">Get started</Link>
         </Button>
       </div>

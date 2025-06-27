@@ -1,48 +1,76 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Risky = () => {
   return (
-    <div className="bg-[#EFFAF8] lg:h-[753px] h-[890px] relative mb-28 overflow-hidden lg:mt-28 mt-16">
-      <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-8 pt-12 gap-10">
-        <div className="lg:w-[50%] w-full flex flex-col lg:h-[600px] lg:justify-between justify-center">
-          <div>
-            <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto lg:mt-12 mt-6">
-            From Risky Transfers to Verified Transactions            </h1>
-            <p className="text-[16px] lg:w-[510px] w-auto mt-8 lg:text-left text-center">
-            A buyer finds a vendor on Instagram—but instead of guessing, she scans their Trust Profile. One tap reveals history, platform verifications, and delivery stats. No guesswork. Just trusted trade.
-            </p>
-          </div>
+    <div>
+      <div className="bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden  lg:pb-30  pt-10 lg:mt-40 mt-20">
+        <div className="flex lg:px-40 px-5  ">
+          <div className=" ">
+            <p className=" lg:text-left text-center">Use Case</p>
+            <Button
+              asChild
+              className="bg-[#0171DF] text-white h-11 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+            >
+              <Link href="#">Real - Life Scenario</Link>
+            </Button>{" "}
+            <div className="flex flex-col  ">
+              <div className=" lg:w-[100%] w-full">
+                <div className="flex-1 ">
+                  <p>
+                    <span className="font-bold">Emeka,</span> a phone
+                    accessories vendor at Onitsha Main Market:
+                  </p>
 
-          <div className="lg:flex lg:w-[625px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center justify-between z-50">
-            <div className="lg:w-[250px] w-auto">
-              <h4 className="lg:text-[22px] text-[24px] font-[700]">
-              Instant Trust Checks              </h4>
-              <p className="lg:mt-5 mt-2 text-[16px] w-[230px] lg:m-0 m-auto">
-              Buyers can scan or click to see if a seller is verified before payment.
-              </p>
+                  <ul className="list-disc space-y-1 pl-8 pt-6">
+                    <li>Registers on CrediFind</li>
+                    <li>
+                      Links his PoS QR, CartLink profile, and FieldSync ledger
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-5">
+                <div className="flex items-end lg:justify-end justify-center lg:w-[45%]  mb-5">
+                  <Image
+                    src="/next-arrow.svg"
+                    alt="next"
+                    height={28}
+                    width={28}
+                    className="rotate-90 "
+                  />
+                </div>
+                <div className="bg-[#E7F7E6] rounded-[10px] p-10 pb-4 w-full lg:w-[70%]">
+                  <p> Customers scanning his checkout QR can view</p>
+                  <ul className="list-disc px-6 space-y-4 pt-5 text-[14px]">
+                    <li> 800+ transactions reconciled</li>
+                    <li>Top buyer feedback: fast delivery</li>
+                    <li>98% transaction match rate”</li>
+                  </ul>
+                  <p className="text-sm pt-4">
+                    Emeka’s weekly sales rise 25% due to increased trust from
+                    buyers who previously hesitated{" "}
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="mt-1 lg:block hidden">|</div>
-            <div className="lg:w-[330px] w-auto lg:mt-0 mt-6">
-              <h4 className="lg:text-[22px] text-[24px] font-[700] w-full text-nowrap">
-              Cross-Platform Credibility              </h4>
-              <p className="lg:mt-5 mt-2 text-[16px] w-[230px] lg:m-0 m-auto">
-              Merchant trust is portable across WhatsApp, CartLink, PoS, and beyond.              </p>
-            </div>{" "}
+          </div>
+          <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute top-0 ">
+            <Image
+              src="/newhandb.svg"
+              alt="hand"
+              height={900}
+              width={900}
+              className=""
+            />
           </div>
         </div>
-        <div className=" w-[95%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
-          <Image
-            src="/bga.svg"
-            alt="hand"
-            height={700}
-            width={850}
-            className="w-[850px] h-[530px] mt-20"
-          />
+        <div className="lg:hidden flex pt-10">
+          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
         </div>
-      </div>
-      <div className="lg:hidden flex">
-        <Image src="/bga.svg" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

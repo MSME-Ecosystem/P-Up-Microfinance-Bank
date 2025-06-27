@@ -16,12 +16,9 @@ const PaymentAutomation = () => {
             Trigger daily, scheduled, or event-based bank transfers using
             pre-set conditions.
           </p>
-          <Button
-            asChild
-            className="bg-[#0F226B] text-white text-[13px] h-10 px-6 mt-6 "
-          >
-            <Link href="/login">Automate Payout</Link>
-          </Button>
+          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold px-24 ">
+          <Link href="#">Automate payout</Link>
+        </Button>
         </div>
         <div>
           <Image src="/po.png" alt="Purpose" height={442} width={495} className="lg:mt-0 mt-8" />

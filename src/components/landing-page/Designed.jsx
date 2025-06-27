@@ -8,7 +8,7 @@ const Designed = () => {
         <h1 className="lg:text-[40px] text-[27px] font-bold leading-tight lg:w-[644px] w-auto">
           Designed for Every Operator in the Financial Stack
         </h1>
-        <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-tight lg:py-7 py-4">
+        <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-normal lg:pt-8 pt-4 lg:pb-20 pb-4">
           Whether you're a field agent, platform operator, aggregator, or
           merchant — each module is tailored to fit your workflow, online or
           offline.
@@ -29,6 +29,7 @@ const Designed = () => {
             alt="Designed"
             width={595}
             height={579}
+            className="rotate-y-180"
           />
         </div>
       </div>

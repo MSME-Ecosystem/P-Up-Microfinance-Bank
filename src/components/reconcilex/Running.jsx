@@ -1,48 +1,104 @@
 import Image from "next/image";
 import React from "react";
-
+import { Button } from "../ui/button";
+import Link from "next/link";
 const Running = () => {
   return (
     <div>
-      <div className="bg-[#EFFAF8] lg:h-[712px] h-[890px]  mb-24">
-        <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-28 pt-12 gap-10">
-          <div className="lg:w-[50%] flex flex-col lg:h-[500px] lg:justify-between">
-            <div>
-              <h1 className="font-[700] lg:text-[40px] text-[28px] lg:w-[576px] w-auto  leading-tight lg:text-left text-center lg:pl-0 pl-5 lg:m-0 m-auto  ">
-              Running on Odoo, QuickBooks, or a custom ERP? ReconcileX plugs right in.</h1>
-              <p className="text-[16px] lg:w-[510px] w-auto mt-8 lg:text-left text-center  ">
-              No more manual checks. No more messy spreadsheets. Just accurate, real-time reconciliation.
-              </p>
-            </div>
+      <div className="bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden lg:py-10 pt-10 lg:mt-0 mt-20">
+        <div className="flex lg:px-40 px-5  ">
+          <div className=" ">
+            <p className=" lg:text-left text-center">Use Case</p>
+            <Button
+              asChild
+              className="bg-[#0171DF] text-white h-10 px-24 my-10 font-bold text-[18px]"
+            >
+              <Link href="#">Real - Life Scenario</Link>
+            </Button>{" "}
+            <div className="flex flex-col  ">
+              <div className="lg:flex block lg:w-[80%] w-full">
+                <div className="flex-1">
+                  <p>
+                    <span className="font-bold">Tunde, </span> owner of
+                    TundeTyres, a car parts distributor in Akure, uses Odoo ERP
+                    to track inventory and generate invoices
+                  </p>
+                  <ul className="list-disc space-y-1 pl-8">
+                    <li>
+                      Send <span className="font-bold">invoices</span> via email
+                      or WhatsApp
+                    </li>
+                    <li>
+                      Wait for customers to pay (often by generic transfer)
+                    </li>
+                    <li>
+                      Manually open his bank app and reconcile payments daily
+                    </li>
+                    <li>
+                      Match payments to invoices based on narration and
+                      guesswork
+                    </li>
+                  </ul>
+                </div>
 
-            <div className="lg:flex lg:w-[520px] w-auto gap-5 lg:mt-0 mt-12 lg:text-left text-center">
-              <div className="lg:w-[230px] w-auto">
-                <h4 className="lg:text-[22px] text-[24px] font-[700]">
-                Save Time                </h4>
-                <p className="lg:mt-5 mt-2 text-[16px]">
-                Save hours of manual work weekly                </p>
+                <div className="flex items-start  mx-auto lg:mx-4 lg:justify-start justify-center  my-5">
+                  <Image
+                    src="/next-arrow.svg"
+                    alt="next"
+                    height={28}
+                    width={28}
+                    className="shrink-0 lg:rotate-0 rotate-90"
+                  />
+                </div>
+
+                <div className="flex-1">
+                  <div className="bg-[#E6F7F1] rounded-[10px] m-auto p-5 w-full lg:w-[370px]">
+                    <span className="font-bold">Now with ReconcileX:</span>
+                    <ul className="list-disc px-6 space-y-2 text-[14px] pt-5">
+                      <li>Each invoice gets a dedicated virtual account</li>
+                      <li>
+                        When a payment comes in, the system auto-matches it to
+                        the invoice.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="mt-1 lg:block hidden">|</div>
-              <div className="lg:w-[230px] w-auto lg:mt-0 mt-5">
-                <h4 className="lg:text-[22px] text-[24px] font-[700]">
-                See payment live                </h4>
-                <p className="lg:mt-5 mt-2 text-[16px]">
-                Track cashflow and payment status in real time                </p>
-              </div>{" "}
+
+              <div className=" lg:mt-15 mt-5">
+                <div className="flex items-end lg:justify-end justify-center lg:w-[33%] lg:mb-0 mb-5">
+                  <Image
+                    src="/next-arrow.svg"
+                    alt="next"
+                    height={28}
+                    width={28}
+                    className="rotate-90 "
+                  />
+                </div>
+                <div className="bg-[#E6F7F1] rounded-[10px]  p-5 w-full lg:w-[35%]">
+                    <span className="font-bold">Now with ReconcileX:</span>
+                    <ul className="list-disc px-6 space-y-2 pt-5 text-[14px]">
+                      <li >Tunde’s Odoo dashboard updates the invoice status to "PAID" instantly, no manual  checking needed</li>
+                      <li>
+                      He also receives a daily summary report and cashflow chart
+                      </li>
+                    </ul>
+                  </div>
+              </div>
             </div>
           </div>
-          <div className=" w-[88%] lg:flex hidden justify-end items-end h-[600px] absolute  ">
+          <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
             <Image
-              src="/phone.svg"
+              src="/newhandb.svg"
               alt="hand"
-              height={600}
-              width={850}
-              className="w-[600px] h-[580px]"
+              height={900}
+              width={900}
+              className=""
             />
           </div>
         </div>
-        <div className="lg:hidden flex">
-          <Image src="/phone.svg" alt="hand" height={280} width={330} className="lg:m-0 m-auto" />
+        <div className="lg:hidden flex pt-10">
+          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
         </div>
       </div>
     </div>

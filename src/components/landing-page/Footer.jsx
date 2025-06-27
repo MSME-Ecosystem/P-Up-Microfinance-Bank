@@ -40,33 +40,31 @@ export function Footer() {
     <div>
       <footer className="bg-white text-black lg:pt-16 lg:pb-12">
         {/* Main Footer Content */}
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+        <div className="container mx-auto  lg:py-16 pb-16 lg:px-0 px-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:gap-25 gap-10">
             {/* Company Info - Takes 2 columns on large screens */}
             <div className="lg:col-span-2 space-y-6">
-              <div>
+              <div className="lg:block flex items-center justify-between">
                 <div className="flex flex-col space-x-3 items-center-center mb-4">
                   <div className="w-16 h-16 flex items-center justify-center">
                     <Image
-                      src={"/footer-logo.svg"}
+                      src={"/newlogo.svg"}
                       alt="Logo"
                       width={70}
                       height={70}
                     />
                   </div>
-                  <h3 className="text-[16px] text-[#000000]">
-                    MICRO FINANCE BANK LTD
-                  </h3>
+                 
                 </div>
-                <p className=" text-[#000000] mt-10 mx-12">
+                <button className="lg:mt-10  border border-[#0F226B] text-[#0F226B] px-3 rounded-[10px] w-[215px] h-[40px]">
                   Contact sales
-                </p>
+                </button>
               </div>
             </div>
 
             {/* Programs */}
             <div className="space-y-4">
-              <h4 className="text-lg text-[#000000] mb-4">Use Cases</h4>
+              <h4 className="text-lg text-[#000000] mb-4 font-bold">Use Cases</h4>
               <ul className="space-y-3">
                 {usecaseLinks.map((link) => (
                   <li key={link.name}>
@@ -81,7 +79,7 @@ export function Footer() {
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="text-lg text-[#000000] mb-4">Company</h4>
+              <h4 className="text-lg text-[#000000] mb-4 font-bold">Company</h4>
               <ul className="space-y-3">
                 {companyLinks.map((link) => (
                   <li key={link.name}>
@@ -97,7 +95,7 @@ export function Footer() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg text-[#000000] mb-4">Get in touch</h4>
+              <h4 className="text-lg text-[#000000] mb-4 font-bold">Get in touch</h4>
               <div className="pt-2">
                 <div>
                   <p className="lg:w-[250px] w-auto text-[#1B1B1B]">
@@ -108,7 +106,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 mt-20">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 lg:mt-20 mt-10">
             <div className="flex flex-col sm:flex-row items-center lg:text-end text-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-[#000000]">
               <p>
                 © {new Date().getFullYear()} P-UP Copyright{" "}

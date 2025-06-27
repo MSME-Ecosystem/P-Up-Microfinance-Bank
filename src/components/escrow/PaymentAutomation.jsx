@@ -7,7 +7,7 @@ const PaymentAutomation = () => {
   return (
     <div className="lg:px-5 pb-24 ">
 
-      <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+      {/* <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
         <div className="flex flex-col items-start  lg:w-1/2 w-full lg:px-10">
           <h1 className="py-5 text-[16px] leading-tight">
@@ -36,7 +36,7 @@ const PaymentAutomation = () => {
             className="rounded-md max-w-full h-auto"
           />
         </div>
-      </div>
+      </div> */}
 
     </div>
   );

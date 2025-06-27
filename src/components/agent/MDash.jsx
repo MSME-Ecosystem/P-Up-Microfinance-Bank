@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import { Link } from "lucide-react";
 
 const MDash = () => {
   return (
@@ -16,6 +18,11 @@ const MDash = () => {
             Agents access tools for collections, deposits, disbursements, and
             customer interactions right from their phones.{" "}
           </p>
+          <Button
+            className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6"
+          >
+            Launch Dashboard
+          </Button>
         </div>
         <div>
           <Image
@@ -31,10 +38,15 @@ const MDash = () => {
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700] text-nowrap">
             Mobile Dashboards for Field Ops
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px]">
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] mb-8">
             Agents access tools for collections, deposits, disbursements, and
             customer interactions right from their phones.
           </p>
+          <Button
+            className="bg-[#0F226B] text-white h-11 font-bold px-22"
+          >
+            Launch Dashboard
+          </Button>
         </div>
       </div>
     </div>

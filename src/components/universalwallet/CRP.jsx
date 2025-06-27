@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const CRP = () => {
   return (
@@ -16,6 +18,9 @@ const CRP = () => {
             Pay or receive funds via QR codes, payment links, PoS terminals, or
             Bluetooth—regardless of which app the buyer uses.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold w-full">
+            <Link href="#">Accept anywhere</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/ecrr.png" alt="purpose" height={442} width={495} />
@@ -25,10 +30,13 @@ const CRP = () => {
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
             Cross-Platform Payment Acceptance
           </h2>
-          <p className="text-[16px] text-[#1B1B1B]">
+          <p className="text-[16px] text-[#1B1B1B]  lg:mb-8 mb-4">
             Pay or receive funds via QR codes, payment links, PoS terminals, or
             Bluetooth—regardless of which app the buyer uses.
           </p>
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-20">
+            <Link href="#">Accept anywhere</Link>
+          </Button>{" "}
         </div>
       </div>
     </div>

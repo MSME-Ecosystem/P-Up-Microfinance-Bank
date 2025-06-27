@@ -1,48 +1,70 @@
 import React from "react";
 import Image from "next/image";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Built = () => {
   return (
-    <div className="bg-[#EFFAF8] lg:h-[753px] h-[790px] relative mb-28 overflow-hidden lg:mt-28 mt-16">
-      <div className="flex lg:pl-[170px] pl-5 lg:pr-0 pr-5 lg:pt-8 pt-12 gap-10">
-        <div className="lg:w-[50%] w-full flex flex-col lg:h-[600px] lg:justify-between justify-center">
-          <div>
-            <h1 className="font-[700] lg:text-[40px] text-[30px] lg:w-[450px] w-auto leading-12 lg:text-left text-center  lg:m-0 m-auto lg:mt-12 mt-6">
-            Built for Organizations That Need Clarity, Not Complexity            </h1>
-            <p className="text-[16px] lg:w-[510px] w-auto mt-8 lg:text-left text-center">
-            From community groups to growing small businesses, ClariFi brings insight to those who can’t afford BI teams or technical tools.
-            </p>
-          </div>
+    <div className="bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden  lg:py-10 pt-10 lg:mt-40 mt-20">
+      <div className="flex lg:px-40 px-5  ">
+        <div className=" ">
+          <p className=" lg:text-left text-center">Use Case</p>
+          <Button
+            asChild
+            className="bg-[#0171DF] text-white h-10 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+          >
+            <Link href="#">Real - Life Scenario</Link>
+          </Button>{" "}
+          <div className="flex flex-col  ">
+            <div className=" lg:w-[65%] w-full">
+              <div className="flex-1 ">
+                <p>
+                  <span className="font-bold">Unity Women's Cooperative,</span>{" "}
+                  a thrift savings group in Ilorin, manages ₦15M/month in
+                  savings and loan repayments. Prior to ClariFi:
+                </p>
 
-          <div className="lg:flex lg:w-[625px] w-auto gap-8 lg:mt-0 mt-12 lg:text-left text-center justify-between z-50">
-            <div className="lg:w-[250px] w-auto">
-              <h4 className="lg:text-[22px] text-[24px] font-[700]">
-              No setup headaches              </h4>
-              <p className="lg:mt-5 mt-2 text-[16px]">
-              Connect your wallet or invoice log and start seeing insights in minutes              </p>
+                <ul className="list-disc space-y-1 pl-8 pt-6">
+                  <li>They used Excel and handwritten ledgers</li>
+                  <li>Reporting was done quarterly, manually</li>
+                  <li>Fraud and omission were common</li>
+                </ul>
+              </div>
             </div>
-            <div className="mt-1 lg:block hidden">|</div>
-            <div className="lg:w-[330px] w-auto lg:mt-0 mt-6">
-              <h4 className="lg:text-[22px] text-[24px] font-[700] w-full text-nowrap">
-              Designed for humans, not analysts              </h4>
-              <p className="lg:mt-5 mt-2 text-[16px] w-[290px] lg:m-0 m-auto">
-              Simple language, visual summaries, and voice-friendly commands
-              </p>
-            </div>{" "}
+
+            <div className="mt-5">
+              <div className="flex items-end lg:justify-end justify-center lg:w-[20%]  mb-5">
+                <Image
+                  src="/next-arrow.svg"
+                  alt="next"
+                  height={28}
+                  width={28}
+                  className="rotate-90 "
+                />
+              </div>
+              <div className="bg-[#E7F7E6] rounded-[10px]  p-5 w-full lg:w-[40%]">
+                <p> Now </p>
+                <ul className="list-disc px-6 space-y-4 pt-5 text-[14px]">
+                  <li> Every collection, loan disbursement, and repayment shows on their dashboard</li>
+                  <li>The treasurer gets SMS alerts if cash falls below safety thresholds </li>
+                  <li>Monthly reports are auto-generated and submitted to the auditor</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div className=" w-[95%] lg:flex hidden justify-end items-end h-[720px] absolute  ">
+        <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
           <Image
-            src="/bga.svg"
+            src="/newhandb.svg"
             alt="hand"
-            height={700}
-            width={850}
-            className="w-[850px] h-[530px] mt-20"
+            height={900}
+            width={900}
+            className=""
           />
         </div>
       </div>
-      <div className="lg:hidden flex">
-        <Image src="/bga.svg" alt="hand" height={600} width={650} />
+      <div className="lg:hidden flex pt-10">
+        <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

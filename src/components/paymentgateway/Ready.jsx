@@ -1,58 +1,78 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Ready = () => {
   return (
-    <div className="bg-[#EFFAF8] relative lg:mb-24 mb-12  lg:max-h-screen  overflow-hidden lg:text-left text-center">
-      <div className="flex lg:pl-28 pl-3 lg:pr-0 pr-5 pt-10 gap-10">
-        <div className="flex flex-col lg:h-[600px] lg:justify-between ">
-          <div>
-            <p className="py-8">Use Case</p>
-            <h1 className="font-[700] lg:text-[40px] text-[30px] leading-12 lg:w-[510px] w-auto lg:text-nowrap">
-              Seamless Payment
-              <br /> Infrastructure for SaaS,
-              <br /> Communities, and Agencies
-            </h1>
-            {/*  <p className="text-[16px] lg:w-[510px] mt-8 text-left">
-              CartLink makes it easy to sell together—and get paid separately. Whether you’re bundling with friends or running an affiliate campaign, we’ve got the flow covered.
-            </p> */}
-          </div>
+    <div>
+      <div className="bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden  lg:pb-24  pt-10 lg:mt-40 mt-20">
+        <div className="flex lg:px-40 px-5  ">
+          <div className=" ">
+            <p className=" lg:text-left text-center">Use Case</p>
+            <Button
+              asChild
+              className="bg-[#0171DF] text-white h-11 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+            >
+              <Link href="#">Real - Life Scenario</Link>
+            </Button>{" "}
+            <div className="flex flex-col  ">
+              <div className=" lg:w-[90%] w-full">
+                <div className="flex-1 ">
+                  <p>
+                    <span className="font-bold">AgroBid,</span> an agri-input
+                    ordering system for 100,000 farmers, wants
+                  </p>
 
-          <div className="lg:flex lg:w-3/5  gap-10  mt-12  mb-20 z-10">
-            <div className=" mb-5 lg:mb-0">
-              <h4 className="lg:text-[22px] text-[24px] font-[700] text-nowrap">
-                Boosted Customer Loyalty
-              </h4>
-              <p className="lg:mt-5 mt-2 text-[16px] lg:w-[230px] w-auto">
-                Built-in cashback and loyalty programs encourage repeat
-                purchases and long-term engagement.
-              </p>
+                  <ul className="list-disc space-y-1 pl-8 pt-2">
+                    <li>Branded checkout per seller</li>
+                    <li>Payout logic to suppliers</li>
+                    <li>Escrowed wallet holding for buyers</li>
+                    <li>Digital receipts</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-5">
+                <div className="flex items-end lg:justify-end justify-center lg:w-[45%]  mb-5">
+                  <Image
+                    src="/next-arrow.svg"
+                    alt="next"
+                    height={28}
+                    width={28}
+                    className="rotate-90 "
+                  />
+                </div>
+                <div className="bg-[#E7F7E6] rounded-[10px]  px-5 py-8 w-full lg:w-[100%]">
+                  <p>
+                    {" "}
+                    With <span className="text-[#0171DF]">GateLite</span>
+                  </p>
+                  <ul className="list-disc px-6 space-y-4 pt-4 text-[14px]">
+                    <li> AgroBid collects via SmartQR</li>
+                    <li>Routes payments through ReconcileX</li>
+                    <li>Settles funds to merchant wallet after delivery</li>
+                    <li>
+                    Gains real-time control, zero reconciliation staf                    </li>
+                  </ul>
+                 
+                </div>
+              </div>
             </div>
-            <div className="mt-1 lg:block hidden">|</div>
-            <div className="">
-              <h4 className="lg:text-[22px] text-[24px] font-[700] text-nowrap">
-                Unified Transaction History
-              </h4>
-              <p className="lg:mt-5 mt-2 text-[16px] lg:w-[230px] w-auto">
-                Merchant trust is portable across WhatsApp, CartLink, PoS, and
-                beyond.
-              </p>
-            </div>{" "}
+          </div>
+          <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute top-0 ">
+            <Image
+              src="/newhandb.svg"
+              alt="hand"
+              height={900}
+              width={900}
+              className=""
+            />
           </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-0 right-0 hidden lg:block">
-        <Image
-          src="/bga.svg"
-          alt="use case"
-          height={550}
-          width={600}
-          className="object-contain"
-        />
-      </div>
-      <div className="lg:hidden flex">
-        <Image src="/bga.svg" alt="hand" height={600} width={650} />
+        <div className="lg:hidden flex pt-10">
+          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+        </div>
       </div>
     </div>
   );

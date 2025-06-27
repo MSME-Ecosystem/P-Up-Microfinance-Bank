@@ -7,7 +7,7 @@ const PaymentLink = () => {
   return (
     <div className="space-y-20">
       <div className="lg:flex lg:flex-row flex-col-reverse items-center justify-center lg:gap-[150px]">
-        <div className="lg:mb-0 mb-10 lg:hidden flex">
+        <div className="lg:mb-0 mb-5 lg:hidden flex">
           <Image
             src={"/payment1.svg"}
             width={495}
@@ -24,12 +24,9 @@ const PaymentLink = () => {
             Create single-use or reusable links for products, carts, or
             invoices—across web, chat, or in-person sales.
           </p>
-          <Button
-            asChild
-            className="bg-[#0F226B] text-white h-10 mt-5 lg:mt-10 lg:w-auto w-full"
-          >
-            <Link href="#">Get started</Link>
-          </Button>
+          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold ">
+          <Link href="#">Get started</Link>
+        </Button>
         </div>
         <div className="lg:mt-0 mt-10 lg:flex hidden">
           <Image
@@ -50,7 +47,7 @@ const PaymentLink = () => {
           />
         </div>
         <div>
-          <p>Multi-Merchant Cart</p>
+          <p className="lg:pt-0 pt-4">Multi-Merchant Cart</p>
           <h1 className="lg:text-[32px] text-[25px] lg:w-[487px] w-auto font-bold leading-tight text-[#0171DF] my-5">
             One cart. Multiple vendors. One payment.
           </h1>
@@ -58,9 +55,9 @@ const PaymentLink = () => {
             Let buyers shop from multiple merchants in a single checkout. UniTap
             splits and reconciles payments automatically.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-10 mt-10 lg:w-auto w-full">
-            <Link href="#">Get started</Link>
-          </Button>
+          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold  ">
+          <Link href="#">Get started</Link>
+        </Button>
         </div>
       </div>
       <div className="lg:flex lg:flex-row flex-col-reverse items-center justify-center lg:gap-[150px]">
@@ -73,7 +70,7 @@ const PaymentLink = () => {
           />
         </div>
         <div>
-          <p>Universal wallet</p>
+          <p className="lg:pt-0 pt-4">Universal wallet</p>
           <h1 className="lg:text-[32px] text-[25px] font-bold text-[#0171DF] my-5">
             Accept all payment types—no friction.
           </h1>
@@ -81,9 +78,9 @@ const PaymentLink = () => {
             Enable cards, transfers, and digital wallets in one unified
             checkout, tailored to buyer preferences.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-10 mt-10 lg:w-auto w-full">
-            <Link href="#">Get started</Link>
-          </Button>
+          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold ">
+          <Link href="#">Get started</Link>
+        </Button>
         </div>
         <div className="lg:flex hidden">
           <Image
@@ -104,7 +101,7 @@ const PaymentLink = () => {
           />
         </div>
         <div>
-          <p>Omnichannel Checkout</p>
+          <p className="lg:pt-0 pt-4">Omnichannel Checkout</p>
           <h1 className="lg:text-[32px] text-[25px] lg:w-[487px] w-auto font-bold leading-tight text-[#0171DF] my-5">
             Web. WhatsApp. PoS. Even offline.
           </h1>
@@ -112,9 +109,9 @@ const PaymentLink = () => {
             Run a consistent checkout experience across mobile apps, social
             chat, PoS terminals, and offline sync environments.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-10 mt-10 lg:w-auto w-full">
-            <Link href="#">Get started</Link>
-          </Button>
+          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold  ">
+          <Link href="#">Get started</Link>
+        </Button>
         </div>
       </div>
     </div>

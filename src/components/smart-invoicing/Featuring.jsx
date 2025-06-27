@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Featuring = () => {
   return (
-    <div className="space-y-20">
+    <div className="space-y-20 lg:mt-0 mt-16">
       <div className="lg:flex lg:flex-row flex-col-reverse items-center justify-center lg:gap-[150px]">
         <div>
           <p>Featuring</p>
@@ -14,6 +16,12 @@ const Featuring = () => {
             Create professional invoices from your phone or laptop—ready to send
             via WhatsApp, email, or link.
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 lg:mb-0 mb-5 lg:w-auto w-full font-bold  px-5"
+          >
+            <Link href="#">Create Invoice</Link>
+          </Button>
         </div>
         <div>
           <Image
@@ -34,6 +42,12 @@ const Featuring = () => {
             Assign a unique virtual account to every invoice so payments land
             exactly where they should.
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 lg:mb-0 mb-5 w-full font-bold px-5"
+          >
+            <Link href="#">Link Account</Link>
+          </Button>
         </div>
         <div>
           <Image
@@ -52,6 +66,12 @@ const Featuring = () => {
             Assign a unique virtual account to every invoice so payments land
             exactly where they should.
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10  lg:w-fit w-full font-bold  px-5"
+          >
+            <Link href="#">Link Account</Link>
+          </Button>
         </div>
       </div>
       <div className="lg:flex lg:flex-row flex-col-reverse items-center justify-center lg:gap-[150px]">
@@ -64,6 +84,12 @@ const Featuring = () => {
             Know the moment a client pays. Your invoice updates to “PAID”
             automatically.
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 lg:mb-0 mb-5 lg:w-fit w-full font-bold  px-5"
+          >
+            <Link href="#">Get Alerts</Link>
+          </Button>
         </div>
         <div>
           <Image
