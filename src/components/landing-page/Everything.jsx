@@ -22,14 +22,14 @@ const Everything = () => {
           <Image
             src={"/everything1.svg"}
             alt="Everything"
-            width={593}
-            height={488}
+            width={633}
+            height={498}
             className="mx-auto"
           />
         </div>
         <div>
           <p className="lg:text-[16px] text-[14px] mb-3 lg:mt-0 mt-5">Smart checkout</p>
-          <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[462px] w-auto lg:leading-12 leading-normal lg:py-8 py-2">
+          <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[372px] w-auto lg:leading-[44px] leading-normal lg:py-1 py-2">
             Checkout That Thinks Like Your Business
           </h1>
           <p className="lg:w-[462px] w-auto text-[#1B1B1B] py-5 leading-7">
@@ -43,8 +43,8 @@ const Everything = () => {
       </div>
       <div className="bg-[#0171DF0D] border-[0.5px] border-[#0000001A] rounded-md lg:flex lg:flex-row flex-col lg:gap-[70px] gap-5 items-center justify-center lg:px-15 px-6 py-8 mt-12">
         <div>
-          <p className="font-bold text-[14px] mb-3">Offline Stack</p>
-          <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[462px] w-auto leading-tight">
+          <p className="text-[14px] mb-3">Offline Stack</p>
+          <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[374px] w-auto leading-tight">
             Collect and reconcile payments without internet access.
           </h1>
           <p className="lg:w-[462px] w-auto text-[#1B1B1B] py-5 leading-6">
