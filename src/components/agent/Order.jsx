@@ -16,12 +16,21 @@ const Order = () => {
             Each merchant receives a detailed breakdown of items bought,
             including quantity, value, and buyer details{" "}
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold lg:mb-0 mb-6">
-              <Link href="#">View Logs</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold lg:mb-0 mb-6"
+          >
+            <Link href="#">View Logs</Link>
+          </Button>{" "}
         </div>
         <div>
-          <Image src="/Image_fx1.png" alt="POS" height={442} width={495} className="rounded-md" />
+          <Image
+            src="/Image_fx1.png"
+            alt="POS"
+            height={442}
+            width={495}
+            className="rounded-md"
+          />
         </div>
       </div>
     </div>

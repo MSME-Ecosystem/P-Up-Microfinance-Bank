@@ -19,9 +19,12 @@ const SmartLink = () => {
             Generate a single checkout link that aggregates multiple merchants’
             products or services.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold  px-24 lg:mb-0 mb-6">
-              <Link href="#">Create SmartLink</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold  px-24 lg:mb-0 mb-6"
+          >
+            <Link href="#">Create SmartLink</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/sl.png" alt="Purpose" height={442} width={495} />

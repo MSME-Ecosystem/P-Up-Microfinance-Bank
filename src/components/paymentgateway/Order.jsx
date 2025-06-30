@@ -16,9 +16,12 @@ const Order = () => {
             Handle transactions even in low or no-network areas with
             synchronization once connectivity is restored.{" "}
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-20 lg:mb-0 mb-4">
-              <Link href="#">Offline mode</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-20 lg:mb-0 mb-4"
+          >
+            <Link href="#">Offline mode</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image

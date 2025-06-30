@@ -11,16 +11,17 @@ const Ready = () => {
           <p className=" lg:text-left text-center">Use Case</p>
           <Button
             asChild
-            className="bg-[#0F226B] text-white h-10 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+            className="bg-[#0171DF] text-white h-10 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
           >
             <Link href="#">Real - Life Scenario</Link>
           </Button>{" "}
           <div className="flex flex-col  ">
             <div className=" lg:w-[65%] w-full">
               <div className="flex-1 ">
-                <p>
-                  Raji, CFO at MegaMart Nigeria, runs 70 grocery outlets. Each
-                  cashier uses a shared POS device. Previously, they had
+                <p className="text-[#1B1B1B]">
+                  <span className="font-bold text-black">Raji, </span>CFO at
+                  MegaMart Nigeria, runs 70 grocery outlets. Each cashier uses a
+                  shared POS device. Previously, they had
                 </p>
                 <ul className="list-disc space-y-1 pl-8 pt-4">
                   <li>Zero visibility into who collected what</li>
@@ -62,7 +63,7 @@ const Ready = () => {
         </div>
         <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
           <Image
-            src="/newhandb.svg"
+            src="/newhandb.png"
             alt="hand"
             height={900}
             width={900}
@@ -71,7 +72,7 @@ const Ready = () => {
         </div>
       </div>
       <div className="lg:hidden flex pt-10">
-        <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+        <Image src="/newhandb.png" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

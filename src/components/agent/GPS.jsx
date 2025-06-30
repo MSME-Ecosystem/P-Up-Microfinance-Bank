@@ -18,9 +18,12 @@ const GPS = () => {
             Assign agents to specific zones or routes. Monitor movements and
             ensure coverage.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 lg:mb-0 mb-6">
-              <Link href="#">Assign Territory</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-22 lg:mb-0 mb-6"
+          >
+            <Link href="#">Assign Territory</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/gps.png" alt="Purpose" height={442} width={495} />

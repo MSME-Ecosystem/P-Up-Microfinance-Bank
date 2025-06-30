@@ -18,12 +18,21 @@ const VirtualAccounts = () => {
             Issue real bank account numbers for your users, at scale and on
             demand.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold px-22 ">
-          <Link href="#">Issue Accounts</Link>
-        </Button>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold px-22 "
+          >
+            <Link href="#">Issue Accounts</Link>
+          </Button>
         </div>
         <div>
-          <Image src="/ia.png" alt="Purpose" height={442} width={495} className="lg:mt-0 mt-8" />
+          <Image
+            src="/ia.png"
+            alt="Purpose"
+            height={442}
+            width={495}
+            className="lg:mt-0 mt-8"
+          />
         </div>
       </div>
     </div>

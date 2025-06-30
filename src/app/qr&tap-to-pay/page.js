@@ -13,10 +13,9 @@ const page = () => {
       <div className="lg:px-24 px-5">
         <Qr />
         <Smart />
-        <Generator/>
-        <Dynamic/>
-        <Reconcilation/>
-
+        <Generator />
+        <Dynamic />
+        <Reconcilation />
       </div>
 
       <Built />

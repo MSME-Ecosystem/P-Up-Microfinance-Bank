@@ -12,7 +12,7 @@ const page = () => {
         <Cards />
       </div>
       <Running />
-       <div className="lg:px-40 px-5">
+      <div className="lg:px-40 px-5">
         <GetStarted />
       </div>
     </div>

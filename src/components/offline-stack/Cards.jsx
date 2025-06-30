@@ -50,7 +50,7 @@ const Cards = () => {
             />
           </div>
           <p className="font-[700] lg:text-[20px] text-[18px] py-5 text-center ">
-            Codes{" "}
+            Smart QR Codes{" "}
           </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] ">
             Generate QR codes that adjust based on customer and transaction

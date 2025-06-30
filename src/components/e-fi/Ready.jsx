@@ -17,10 +17,11 @@ const Ready = () => {
           </Button>{" "}
           <div className="flex flex-col  ">
             <div className="lg:flex block lg:w-[100%] w-full">
-              <div className="flex-1 ">
+              <div className="flex-1 text-[#1B1B1B]">
                 <p>
-                  <span className="font-bold">EasyBid,</span> a transport fleet
-                  management platform, serves 20,000 drivers. They want to:
+                  <span className="font-bold text-black">EasyBid,</span> a
+                  transport fleet management platform, serves 20,000 drivers.
+                  They want to:
                 </p>
                 <ul className="list-disc space-y-1 pl-8 pt-1">
                   <li>
@@ -46,9 +47,11 @@ const Ready = () => {
               </div>
 
               <div className="flex-1 ">
-                <div className="bg-[#D22F27]/10 rounded-[10px] m-auto px-5 py-8 w-full lg:w-[320px]">
+                <div className="bg-[#D22F27]/10 rounded-[10px] m-auto px-5 py-8 w-full lg:w-[320px] text-[#1B1B1B]">
                   <p>
-                  Instead of applying for a license or building banking rails, EasyBid integrates with  BankBox’s API and goes live in 1 week.
+                    Instead of applying for a license or building banking rails,
+                    EasyBid integrates with BankBox’s API and goes live in 1
+                    week.
                   </p>
                 </div>
               </div>
@@ -69,8 +72,11 @@ const Ready = () => {
                 <ul className="list-disc px-6 space-y-4 pt-5 text-[14px]">
                   <li>A wallet</li>
                   <li>A programmable payout rule </li>
-                  <li>A  unique NUBAN virtual account</li>
-                  <li>Visibility into transactions, balances, and scheduled transfers</li>
+                  <li>A unique NUBAN virtual account</li>
+                  <li>
+                    Visibility into transactions, balances, and scheduled
+                    transfers
+                  </li>
                 </ul>
               </div>
             </div>
@@ -78,7 +84,7 @@ const Ready = () => {
         </div>
         <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
           <Image
-            src="/newhandb.svg"
+            src="/newhandb.png"
             alt="hand"
             height={900}
             width={900}
@@ -87,7 +93,7 @@ const Ready = () => {
         </div>
       </div>
       <div className="lg:hidden flex pt-10">
-        <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+        <Image src="/newhandb.png" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

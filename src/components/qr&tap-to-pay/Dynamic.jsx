@@ -11,9 +11,11 @@ const Dynamic = () => {
             Featuring
           </p>
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-          Dynamic Checkout Builder          </h2>
+            Dynamic Checkout Builder{" "}
+          </h2>
           <p className="text-[16px] lg:text-left text-center  lg:mb-8 mb-4 lg:w-[400px]">
-          Trigger custom checkout pages with embedded pricing, product info, and agent ID—automatically
+            Trigger custom checkout pages with embedded pricing, product info,
+            and agent ID—automatically
           </p>
           <Button
             asChild
@@ -34,10 +36,11 @@ const Dynamic = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center">
           <p className=" pb-4">Featuring</p>
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
-          Dynamic Checkout Builder            </h2>
+            Dynamic Checkout Builder{" "}
+          </h2>
           <p className="text-[16px] text-[#1B1B1B] lg:mb-6 w-[450px] leading-7">
-          Trigger custom checkout pages with embedded pricing, product info, and agent ID—automatically
-
+            Trigger custom checkout pages with embedded pricing, product info,
+            and agent ID—automatically
           </p>
           <Button
             asChild

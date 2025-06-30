@@ -28,7 +28,9 @@ const Everything = () => {
           />
         </div>
         <div>
-          <p className="lg:text-[16px] text-[14px] mb-3 lg:mt-0 mt-5">Smart checkout</p>
+          <p className="lg:text-[16px] text-[14px] mb-3 lg:mt-0 mt-5">
+            Smart checkout
+          </p>
           <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[372px] w-auto lg:leading-[44px] leading-normal lg:py-1 py-2">
             Checkout That Thinks Like Your Business
           </h1>
@@ -36,7 +38,10 @@ const Everything = () => {
             Flexible checkout built for merchants — supporting logic-based
             routing, embedded flows, fees, commissions, and more.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-12 mt-5 lg:w-auto w-full font-bold px-8 text-[16px]">
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-12 mt-5 lg:w-auto w-full font-bold px-8 text-[16px]"
+          >
             <Link href="/smart-checkout">Try Checkout</Link>
           </Button>
         </div>
@@ -52,7 +57,10 @@ const Everything = () => {
             reconcile payments—entirely offline. Built for markets where
             internet isn't guaranteed but business must go on.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-12 mt-5 lg:w-auto w-full font-bold px-8 text-[16px]">
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-12 mt-5 lg:w-auto w-full font-bold px-8 text-[16px]"
+          >
             <Link href="/smart-checkout">Try Checkout</Link>
           </Button>
         </div>

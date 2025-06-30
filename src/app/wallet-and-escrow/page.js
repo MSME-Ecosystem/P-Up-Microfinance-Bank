@@ -14,9 +14,8 @@ const page = () => {
         <Purpose />
         <SafeHands />
         <Order />
-        <EscrowRules/>
+        <EscrowRules />
         <ERP />
-
       </div>
       <Ready />
       <div className="px-5 lg:px-32 text-[#000000]">

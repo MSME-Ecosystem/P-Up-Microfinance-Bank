@@ -52,7 +52,7 @@ const Cards = () => {
           <p className="font-[700] lg:text-[24px] text-[18px] py-5 text-center leading-tight">
             Earn Loyalty, Instantly{" "}
           </p>
-          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] mt-5">
+          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] lg:mt-5">
             Cashback and loyalty points are auto-applied per purchase.{" "}
           </p>
         </div>

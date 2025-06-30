@@ -8,7 +8,7 @@ const Purpose = () => {
     <div className="lg:pt-40 pt-24 lg:pb-30 pb-12 ">
         <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[520px] w-auto">
-            <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center ">
+            <p className=" lg:text-[48px] text-[32px] font-[700] lg:leading-14 leading-9 lg:text-left text-center ">
               One Wallet. Any Vendor. Every Platform.{" "}
             </p>
             <p className="lg:py-6 py-8 text-[#1B1B1B] lg:text-left text-center">

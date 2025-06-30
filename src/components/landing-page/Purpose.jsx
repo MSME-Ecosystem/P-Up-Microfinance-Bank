@@ -12,7 +12,8 @@ const Purpose = () => {
           Purpose-Built Modules to Power Every Layer of Your Financial Stack
         </h1>
         <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-normal lg:pt-12 pt-4 pb-6">
-          From reconciliation to offline payments, checkout to agent operations — each tool works standalone or as part of a unified infrastructure.
+          From reconciliation to offline payments, checkout to agent operations
+          — each tool works standalone or as part of a unified infrastructure.
         </p>
       </div>
 
@@ -33,12 +34,14 @@ const Purpose = () => {
             Automated Reconciliation. Zero Guesswork
           </h1>
           <p className="text-[#1B1B1B] lg:w-[324px] w-auto my-5">
-            Automatically match incoming payments to the right invoices, orders, or accounts—across bank transfers, wallets, and offline channels. No spreadsheets. No manual tracking.
+            Automatically match incoming payments to the right invoices, orders,
+            or accounts—across bank transfers, wallets, and offline channels. No
+            spreadsheets. No manual tracking.
           </p>
           <Button
             asChild
             className="bg-[#0F226B] text-white h-11 mt-5 px-6 lg:w-fit w-full font-bold"
-          > 
+          >
             <Link href="/reconcile-x">View Reconcilex</Link>
           </Button>
         </div>
@@ -52,7 +55,8 @@ const Purpose = () => {
             Programmable Payouts. No Manual Transfers
           </h1>
           <p className="text-[#1B1B1B] lg:w-[324px] w-auto my-5">
-            Flexible checkout built for — supporting logic-based routing, embedded flows, fees, commissions, and more.
+            Flexible checkout built for — supporting logic-based routing,
+            embedded flows, fees, commissions, and more.
           </p>
           <Button
             asChild

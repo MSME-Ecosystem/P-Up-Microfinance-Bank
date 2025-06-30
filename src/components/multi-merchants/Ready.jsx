@@ -17,13 +17,13 @@ const Ready = () => {
           </Button>{" "}
           <div className="flex flex-col  ">
             <div className=" lg:w-[65%] w-full">
-              <div className="flex-1 ">
+              <div className="flex-1 text-[#1B1B1B]">
                 <p>
-                  <span className="font-bold"> Uju,</span> a food content
-                  creator, posts a recipe reel on Instagram and tags:
+                  <span className="font-bold text-black"> Uju,</span> a food
+                  content creator, posts a recipe reel on Instagram and tags:
                 </p>
 
-                <ul className="list-disc space-y-1 pl-8 pt-6">
+                <ul className="list-disc space-y-1 pl-8 pt-1">
                   <li>Anambra Rice Mart (rice vendor)</li>
                   <li>Ajoke Palm Oil</li>
                   <li>Yinka Pepper Supplies</li>
@@ -42,11 +42,12 @@ const Ready = () => {
                 />
               </div>
               <div className="bg-[#E7F7E6] rounded-[10px]  px-5 pt-12 pb-20 w-full lg:w-[45%]">
-                <p>
+                <p className="text-[#1B1B1B]">
                   {" "}
-                  Each merchant is on <span className="text-[#0171DF]">CartLink.</span> Uju generates a
-                  multi-merchant cart link with preset SKUs. Her fans click, add
-                  all items, and check out once.{" "}
+                  Each merchant is on{" "}
+                  <span className="text-[#0171DF]">CartLink.</span> Uju
+                  generates a multi-merchant cart link with preset SKUs. Her
+                  fans click, add all items, and check out once.{" "}
                 </p>
                 <ul className="list-disc px-6 space-y-4 pt-8 text-[14px]">
                   <li> Payment is automatically split</li>
@@ -60,7 +61,7 @@ const Ready = () => {
         </div>
         <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
           <Image
-            src="/newhandb.svg"
+            src="/newhandb.png"
             alt="hand"
             height={900}
             width={900}
@@ -69,7 +70,7 @@ const Ready = () => {
         </div>
       </div>
       <div className="lg:hidden flex pt-10">
-        <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+        <Image src="/newhandb.png" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

@@ -9,7 +9,6 @@ import Order from "@/components/multi-merchants/Order";
 const page = () => {
   return (
     <div className="text-[#000000]">
-
       <div className="px-5 lg:px-32 text-[#000000]">
         <Purpose />
         <SmartLink />

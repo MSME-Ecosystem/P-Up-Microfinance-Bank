@@ -3,7 +3,6 @@ import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
-
 const Order = () => {
   return (
     <div>
@@ -16,11 +15,15 @@ const Order = () => {
             Cashier Wallets
           </h2>
           <p className="text-[16px] lg:text-left text-center  lg:mb-8 mb-4 lg:w-[400px]">
-          Assign individual wallets to staff, devices, or branches and track every inflow by source.
+            Assign individual wallets to staff, devices, or branches and track
+            every inflow by source.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-20 mb-6">
-              <Link href="#">Create wallets</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-20 mb-6"
+          >
+            <Link href="#">Create wallets</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/cw.png" alt="POS" height={442} width={495} />
