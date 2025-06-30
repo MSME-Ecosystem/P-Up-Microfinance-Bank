@@ -16,9 +16,12 @@ const Purpose = () => {
               Embed accounts, wallets, and programmable payouts into your
               platform with one powerful API suite.{" "}
             </p>
-            <Button asChild className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold ">
-          <Link href="#">Get started</Link>
-        </Button>
+            <Button
+              asChild
+              className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold "
+            >
+              <Link href="#">Get started</Link>
+            </Button>
           </div>
           <div className="lg:mt-0 mt-10">
             <Image

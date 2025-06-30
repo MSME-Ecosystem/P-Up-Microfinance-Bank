@@ -18,9 +18,7 @@ const MDash = () => {
             Agents access tools for collections, deposits, disbursements, and
             customer interactions right from their phones.{" "}
           </p>
-          <Button
-            className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6"
-          >
+          <Button className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6">
             Launch Dashboard
           </Button>
         </div>
@@ -42,9 +40,7 @@ const MDash = () => {
             Agents access tools for collections, deposits, disbursements, and
             customer interactions right from their phones.
           </p>
-          <Button
-            className="bg-[#0F226B] text-white h-11 font-bold px-22"
-          >
+          <Button className="bg-[#0F226B] text-white h-11 font-bold px-22">
             Launch Dashboard
           </Button>
         </div>

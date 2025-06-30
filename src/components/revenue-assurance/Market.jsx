@@ -18,12 +18,12 @@ const Market = () => {
             </Button>{" "}
             <div className="flex flex-col  ">
               <div className=" lg:w-[45%] w-full">
-                <div className="flex-1 ">
+                <div className="flex-1 text-[#1B1B1B]">
                   <p>
-                    <span className="font-bold">Mrs. Ekene,</span> a fruit
-                    vendor in Aba, gets a QR sticker from the LGA labeled “Fruit
-                    Line, Stall 24. Every morning she pays ₦200 levy via wallet
-                    or transfer to her virtual account. The LGA receives{" "}
+                    <span className="font-bold text-black">Mrs. Ekene,</span> a
+                    fruit vendor in Aba, gets a QR sticker from the LGA labeled
+                    “Fruit Line, Stall 24. Every morning she pays ₦200 levy via
+                    wallet or transfer to her virtual account. The LGA receives{" "}
                   </p>
                 </div>
               </div>
@@ -38,7 +38,7 @@ const Market = () => {
                     className="rotate-90 "
                   />
                 </div>
-                <div className="bg-[#E7F7E6] rounded-[10px]  px-12 py-8 w-full lg:w-[45%]">
+                <div className="bg-[#E7F7E6] rounded-[10px]  px-12 py-8 w-full lg:w-[43%]">
                   <ul className="list-disc px-6 space-y-4 py-5 text-[14px]">
                     <li>The exact stall, ward, time, and agent</li>
                     <li>An escrowed payment report </li>
@@ -51,7 +51,7 @@ const Market = () => {
           </div>
           <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute top-0 ">
             <Image
-              src="/newhandb.svg"
+              src="/newhandb.png"
               alt="hand"
               height={900}
               width={900}
@@ -60,7 +60,7 @@ const Market = () => {
           </div>
         </div>
         <div className="lg:hidden flex pt-10">
-          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+          <Image src="/newhandb.png" alt="hand" height={600} width={650} />
         </div>
       </div>
     </div>

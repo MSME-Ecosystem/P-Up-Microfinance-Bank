@@ -15,7 +15,7 @@ const page = () => {
         <Ready />
       </div>
       <div className="px-5 lg:px-32 text-[#000000]">
-        <GetStarted/>
+        <GetStarted />
       </div>
     </div>
   );

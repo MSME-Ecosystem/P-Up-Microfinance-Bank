@@ -54,7 +54,6 @@ export function Footer() {
                       height={70}
                     />
                   </div>
-                 
                 </div>
                 <button className="lg:mt-10  border border-[#0F226B] text-[#0F226B] px-3 rounded-[10px] w-[215px] h-[40px]">
                   Contact sales
@@ -64,7 +63,9 @@ export function Footer() {
 
             {/* Programs */}
             <div className="space-y-4">
-              <h4 className="text-lg text-[#000000] mb-4 font-bold">Use Cases</h4>
+              <h4 className="text-lg text-[#000000] mb-4 font-bold">
+                Use Cases
+              </h4>
               <ul className="space-y-3">
                 {usecaseLinks.map((link) => (
                   <li key={link.name}>
@@ -95,7 +96,9 @@ export function Footer() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-lg text-[#000000] mb-4 font-bold">Get in touch</h4>
+              <h4 className="text-lg text-[#000000] mb-4 font-bold">
+                Get in touch
+              </h4>
               <div className="pt-2">
                 <div>
                   <p className="lg:w-[250px] w-auto text-[#1B1B1B]">

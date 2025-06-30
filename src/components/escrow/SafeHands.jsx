@@ -3,9 +3,10 @@ import React from "react";
 
 const SafeHands = () => {
   return (
-    <div className="text-black w-full">
+    <div className="text-black w-full px-6">
       <p className=" lg:text-[40px] text-[28px] font-[700] lg:leading-14 leading-8  text-center lg:pt-32 pt-12 pb-14">
-      What SafeHands Enables            </p>
+        What SafeHands Enables{" "}
+      </p>
       <div className="lg:flex block justify-center   gap-5 ">
         <div className="lg:w-[370px] w-auto py-15 bg-[#F6EBC6]/50 lg:px-10 px-6 pt-1 lg:m-0 m-6 rounded-lg">
           <div className="">
@@ -34,7 +35,7 @@ const SafeHands = () => {
               className="m-auto mt-15"
             />
           </div>
-          <p className="font-[700] lg:text-[24px] text-[18px] py-5 text-center leading-tight">
+          <p className="font-[700] lg:text-[24px] text-[18px] py-8 text-center leading-tight">
             Programmable Escrow Logic{" "}
           </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B]">

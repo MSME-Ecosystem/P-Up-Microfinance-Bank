@@ -17,11 +17,11 @@ const Ready = () => {
               <Link href="#">Real - Life Scenario</Link>
             </Button>{" "}
             <div className="flex flex-col  ">
-              <div className=" lg:w-[90%] w-full">
-                <div className="flex-1 ">
+              <div className=" lg:w-[95%] w-full">
+                <div className="flex-1 text-[#1B1B1B]">
                   <p>
-                    <span className="font-bold">AgroBid,</span> an agri-input
-                    ordering system for 100,000 farmers, wants
+                    <span className="font-bold text-black">AgroBid,</span> an
+                    agri-input ordering system for 100,000 farmers, wants
                   </p>
 
                   <ul className="list-disc space-y-1 pl-8 pt-2">
@@ -43,7 +43,7 @@ const Ready = () => {
                     className="rotate-90 "
                   />
                 </div>
-                <div className="bg-[#E7F7E6] rounded-[10px]  px-5 py-8 w-full lg:w-[100%]">
+                <div className="bg-[#E7F7E6] rounded-[10px]  px-5 py-8 w-full lg:w-[100%] ">
                   <p>
                     {" "}
                     With <span className="text-[#0171DF]">GateLite</span>
@@ -52,17 +52,15 @@ const Ready = () => {
                     <li> AgroBid collects via SmartQR</li>
                     <li>Routes payments through ReconcileX</li>
                     <li>Settles funds to merchant wallet after delivery</li>
-                    <li>
-                    Gains real-time control, zero reconciliation staf                    </li>
+                    <li>Gains real-time control, zero reconciliation staf </li>
                   </ul>
-                 
                 </div>
               </div>
             </div>
           </div>
           <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute top-0 ">
             <Image
-              src="/newhandb.svg"
+              src="/newhandb.png"
               alt="hand"
               height={900}
               width={900}
@@ -71,7 +69,7 @@ const Ready = () => {
           </div>
         </div>
         <div className="lg:hidden flex pt-10">
-          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+          <Image src="/newhandb.png" alt="hand" height={600} width={650} />
         </div>
       </div>
     </div>

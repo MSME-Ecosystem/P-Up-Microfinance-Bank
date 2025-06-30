@@ -18,15 +18,15 @@ const Turning = () => {
             </Button>{" "}
             <div className="flex flex-col  ">
               <div className=" lg:w-[100%] w-full">
-                <div className="flex-1 ">
+                <div className="flex-1 text-[#1B1B1B]">
                   <p>
-                    <span className="font-bold">Unity</span> Women’s Coop has
-                    300 members. Each has
+                    <span className="font-bold text-black">Unity</span> Women’s
+                    Coop has 300 members. Each has
                   </p>
 
-                  <ul className="list-disc space-y-1 pl-8 pt-6">
+                  <ul className="list-disc space-y-1 pl-8 pt-1">
                     <li>A personal wallet (for savings)</li>
-                    <li>RA loan wallet (for disbursement tracking)</li>
+                    <li>A loan wallet (for disbursement tracking)</li>
                     <li>A welfare wallet (for death benefit contributions)</li>
                   </ul>
                 </div>
@@ -43,7 +43,7 @@ const Turning = () => {
                   />
                 </div>
                 <div className="bg-[#E7F7E6] rounded-[10px]  px-5 pt-12 pb-20 w-full lg:w-[100%]">
-                  <p>
+                  <p className="text-[#1B1B1B]">
                     {" "}
                     <span className="text-[#0171DF]">VaultIQ</span> allows the
                     coop to
@@ -55,18 +55,17 @@ const Turning = () => {
                     <li>
                       Tag wallet activity by purpose, period, and member ID{" "}
                     </li>
-                   
                   </ul>
                   <p className="text-sm pt-4">
-                      No accountants. No Excel sheets. 100% traceable money.
-                    </p>
+                    No accountants. No Excel sheets. 100% traceable money.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
             <Image
-              src="/newhandb.svg"
+              src="/newhandb.png"
               alt="hand"
               height={900}
               width={900}
@@ -75,7 +74,7 @@ const Turning = () => {
           </div>
         </div>
         <div className="lg:hidden flex pt-10">
-          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+          <Image src="/newhandb.png" alt="hand" height={600} width={650} />
         </div>
       </div>
     </div>

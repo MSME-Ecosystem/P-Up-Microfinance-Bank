@@ -17,9 +17,11 @@ const Built = () => {
           </Button>{" "}
           <div className="flex flex-col  ">
             <div className=" lg:w-[65%] w-full">
-              <div className="flex-1 ">
-                <p>
-                  <span className="font-bold">Unity Women's Cooperative,</span>{" "}
+              <div className="flex-1 text-[#1B1B1B]">
+                <p className="">
+                  <span className="font-bold text-black">
+                    Unity Women's Cooperative,
+                  </span>{" "}
                   a thrift savings group in Ilorin, manages ₦15M/month in
                   savings and loan repayments. Prior to ClariFi:
                 </p>
@@ -43,11 +45,21 @@ const Built = () => {
                 />
               </div>
               <div className="bg-[#E7F7E6] rounded-[10px]  p-5 w-full lg:w-[40%]">
-                <p> Now </p>
+                <p className="text-[#1B1B1B]"> Now </p>
                 <ul className="list-disc px-6 space-y-4 pt-5 text-[14px]">
-                  <li> Every collection, loan disbursement, and repayment shows on their dashboard</li>
-                  <li>The treasurer gets SMS alerts if cash falls below safety thresholds </li>
-                  <li>Monthly reports are auto-generated and submitted to the auditor</li>
+                  <li>
+                    {" "}
+                    Every collection, loan disbursement, and repayment shows on
+                    their dashboard
+                  </li>
+                  <li>
+                    The treasurer gets SMS alerts if cash falls below safety
+                    thresholds{" "}
+                  </li>
+                  <li>
+                    Monthly reports are auto-generated and submitted to the
+                    auditor
+                  </li>
                 </ul>
               </div>
             </div>
@@ -55,7 +67,7 @@ const Built = () => {
         </div>
         <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
           <Image
-            src="/newhandb.svg"
+            src="/newhandb.png"
             alt="hand"
             height={900}
             width={900}
@@ -64,7 +76,7 @@ const Built = () => {
         </div>
       </div>
       <div className="lg:hidden flex pt-10">
-        <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+        <Image src="/newhandb.png" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

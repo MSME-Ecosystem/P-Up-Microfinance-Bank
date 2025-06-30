@@ -1,4 +1,3 @@
-
 import PaymentAutomation from "@/components/e-fi/PaymentAutomation";
 import Purpose from "@/components/e-fi/Purpose";
 import VirtualAccounts from "@/components/e-fi/VirtualAccounts";
@@ -10,14 +9,11 @@ import React from "react";
 const page = () => {
   return (
     <div className="text-[#000000]">
-
       <div className="px-5 lg:px-32 text-[#000000]">
         <Purpose />
         <VirtualAccounts />
         <WalletLogic />
         <PaymentAutomation />
-
-
       </div>
       <Ready />
       <div className="px-5 lg:px-32 text-[#000000]">

@@ -18,10 +18,10 @@ const Ready = () => {
           <div className="flex flex-col  ">
             <div className=" lg:w-[65%] w-full">
               <div className="flex-1 ">
-                <p>
-                  <span className="font-bold">Tomi,</span> a graphic designer in
-                  Osogbo, used to send clients screenshots with her bank account
-                  number and hope they paid,
+                <p className="text-[#1B1B1B]">
+                  <span className="font-bold text-black">Tomi,</span> a graphic
+                  designer in Osogbo, used to send clients screenshots with her
+                  bank account number and hope they paid,
                 </p>
                 <p className="py-6">
                   Now with <span className="text-[#0171DF]">InvoIQ:</span>
@@ -48,7 +48,10 @@ const Ready = () => {
                 />
               </div>
               <div className="bg-[#E7F7E6] rounded-[10px]  px-5 py-8 w-full lg:w-[40%]">
-                <p> Tomi opens her dashboard and sees: </p>
+                <p className="text-[#1B1B1B]">
+                  {" "}
+                  Tomi opens her dashboard and sees:{" "}
+                </p>
                 <ul className="list-disc px-6 space-y-4 pt-5 text-[14px]">
                   <li> 3 open invoices</li>
                   <li>₦120,000 in receivables </li>
@@ -60,7 +63,7 @@ const Ready = () => {
         </div>
         <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
           <Image
-            src="/newhandb.svg"
+            src="/newhandb.png"
             alt="hand"
             height={900}
             width={900}
@@ -69,7 +72,7 @@ const Ready = () => {
         </div>
       </div>
       <div className="lg:hidden flex pt-10">
-        <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+        <Image src="/newhandb.png" alt="hand" height={600} width={650} />
       </div>
     </div>
   );

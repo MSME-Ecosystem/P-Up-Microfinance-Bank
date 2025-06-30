@@ -9,7 +9,7 @@ const Smart = () => {
       </p>
       <div className="lg:flex block justify-center gap-5 ">
         <div className="lg:w-[370px] w-auto lg:pb-20 pb-12 bg-[#F6EBC6]/50 lg:px-10 px-6 pt-1 lg:m-0 m-6 rounded-lg">
-          <div className="">
+          <div>
             <Image
               src="/framea.svg"
               alt="context"
@@ -26,7 +26,7 @@ const Smart = () => {
           </p>
         </div>
         <div className="lg:w-[370px] w-auto lg:pb-20 pb-10 bg-[#0171DF]/10 lg:px-10 px-6 pt-1 lg:m-0 m-6 rounded-lg">
-          <div className="">
+          <div>
             <Image
               src="/frameb.svg"
               alt="scan"
@@ -43,7 +43,7 @@ const Smart = () => {
           </p>
         </div>
         <div className="lg:w-[370px] w-auto lg:pb-20 pb-10 bg-[#DEF4EA] lg:px-10 px-6 pt-1 lg:m-0 m-6 rounded-lg">
-          <div className="">
+          <div>
             <Image
               src="/framec.svg"
               alt="track"

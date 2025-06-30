@@ -19,9 +19,12 @@ const Trust = () => {
             SmartLinks, QR codes, and checkouts carry merchant trust badges and
             scores—right at point of payment.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 lg:mb-0 mb-6">
-              <Link href="#">Share Trusted Link</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-22 lg:mb-0 mb-6"
+          >
+            <Link href="#">Share Trusted Link</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/phoneb.svg" alt="phone" height={442} width={495} />
@@ -38,11 +41,15 @@ const Trust = () => {
             Verified Badges{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-          Dynamic badges display real merchant activity like “Reconciled 1,000+ Orders” or “Verified by 3 Platforms.
+            Dynamic badges display real merchant activity like “Reconciled
+            1,000+ Orders” or “Verified by 3 Platforms.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6">
-              <Link href="#">Verified Badges</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6"
+          >
+            <Link href="#">Verified Badges</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/manb.svg" alt="man" height={442} width={495} />
@@ -50,15 +57,18 @@ const Trust = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center w-[487px]">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
-          Verified Badges{" "}
+            Verified Badges{" "}
           </h2>
           <p className="text-[16px] text-[#1B1B1B] mb-8">
-          Dynamic badges display real merchant activity like “Reconciled 1,000+ Orders” or “Verified by 3 Platforms.
-
+            Dynamic badges display real merchant activity like “Reconciled
+            1,000+ Orders” or “Verified by 3 Platforms.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-22 ">
-              <Link href="#">Verified Badges</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold px-22 "
+          >
+            <Link href="#">Verified Badges</Link>
+          </Button>{" "}
         </div>
       </div>
     </div>

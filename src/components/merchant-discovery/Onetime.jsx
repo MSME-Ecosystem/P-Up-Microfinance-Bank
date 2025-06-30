@@ -19,9 +19,12 @@ const Onetime = () => {
             Merchants register once to get verified across platforms—no
             duplication, no confusion.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-10 font-bold lg:mb-0 mb-6">
-              <Link href="#">Verify Now</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-10 font-bold lg:mb-0 mb-6"
+          >
+            <Link href="#">Verify Now</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image src="/mail.svg" alt="mail" height={442} width={495} />
@@ -41,9 +44,12 @@ const Onetime = () => {
             Each merchant gets a unique profile page showing order stats,
             ratings, badges, and platform links.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold w-full mb-6">
-              <Link href="#">View profile</Link>
-            </Button>{" "}
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 font-bold w-full mb-6"
+          >
+            <Link href="#">View profile</Link>
+          </Button>{" "}
         </div>
         <div>
           <Image
@@ -56,16 +62,15 @@ const Onetime = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center w-[487px]">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
-          Public Trust Profile{" "}
+            Public Trust Profile{" "}
           </h2>
           <p className="text-[16px] text-[#1B1B1B] lg:mb-8 mb-4">
-          Each merchant gets a unique profile page showing order stats,
+            Each merchant gets a unique profile page showing order stats,
             ratings, badges, and platform links.
-          
           </p>
           <Button asChild className="bg-[#0F226B] text-white h-10 font-bold">
-              <Link href="#">View profile</Link>
-            </Button>{" "}
+            <Link href="#">View profile</Link>
+          </Button>{" "}
         </div>
       </div>
     </div>

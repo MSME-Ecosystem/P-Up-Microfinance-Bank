@@ -24,7 +24,7 @@ const Ready = () => {
                      a buyer, shops at the Food and Fashion Fair
                   </p>
 
-                  <ul className="list-disc space-y-1 pl-8 pt-2">
+                  <ul className="list-disc space-y-1 pl-8 pt-1">
                     <li>Buys suya from Vendor A using QR
                     </li>
                     <li>
@@ -59,7 +59,7 @@ const Ready = () => {
           </div>
           <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute top-0 ">
             <Image
-              src="/newhandb.svg"
+              src="/newhandb.png"
               alt="hand"
               height={900}
               width={900}
@@ -68,7 +68,7 @@ const Ready = () => {
           </div>
         </div>
         <div className="lg:hidden flex pt-10">
-          <Image src="/newhandb.svg" alt="hand" height={600} width={650} />
+          <Image src="/newhandb.png" alt="hand" height={600} width={650} />
         </div>
       </div>
     </div>

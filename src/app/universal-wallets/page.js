@@ -13,10 +13,9 @@ const page = () => {
       <div className="px-5 lg:px-32 text-[#000000]">
         <Purpose />
         <Cards />
-        
-         <CRP />    
-        <ERP />
 
+        <CRP />
+        <ERP />
       </div>
       <Ready />
       <div className="px-5 lg:px-32 text-[#000000]">
