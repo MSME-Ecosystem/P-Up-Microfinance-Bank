@@ -99,7 +99,6 @@ const Ready = () => {
             alt="hand"
             height={800}
             width={800}
-            className=""
           />
         </div>
       </div>

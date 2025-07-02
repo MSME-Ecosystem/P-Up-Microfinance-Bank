@@ -27,7 +27,6 @@ const Order = () => {
             alt="Offline Payment"
             height={442}
             width={495}
-            className=""
           />
         </div>
       </div>

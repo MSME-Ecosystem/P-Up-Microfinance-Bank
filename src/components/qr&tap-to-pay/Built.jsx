@@ -53,7 +53,7 @@ const Built = () => {
             </div>
           </div>
         </div>
-        <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
+        <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute ">
           <Image src="/newhandb.png" alt="hand" height={900} width={900} />
         </div>
       </div>
