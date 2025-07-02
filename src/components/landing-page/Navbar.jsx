@@ -283,9 +283,9 @@ export function Navbar() {
                               <p className="text-[12px] text-[#000000B2]">
                                 List of all P- UPS Products
                               </p>
-                              <p className="underline text-[#121660] hover:text-[#0F226B] cursor-pointer">
+                              {/* <p className="underline text-[#121660] hover:text-[#0F226B] cursor-pointer">
                                 Explore all
-                              </p>
+                              </p> */}
                             </div>
                           </div>
 
