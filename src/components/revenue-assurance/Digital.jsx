@@ -11,12 +11,9 @@ const Digital = () => {
         <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[540px] w-auto">
             <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-9 lg:text-left text-center lg:w-[560px] w-auto ">
-              Digital Levies. Accountable Collections. Zero Paperwork{" "}
-            </p>
+            Digital levies. Accountable collections. Zero paperwork            </p>
             <p className="lg:py-6 py-8 text-[#1B1B1B] lg:text-left text-center">
-              Bring structure and visibility to daily levies, taxes, and
-              fees—whether in open markets, on the road, or across government
-              sectors.
+            Efficiently manage levies, taxes, and fees with full clarity, perfect for markets, mobile operations, and government services.
             </p>
             <Button asChild className="bg-[#0F226B] text-white h-11 font-bold">
               <Link href="#">Get Started</Link>
@@ -74,9 +71,9 @@ const Digital = () => {
             height={64}
             className="m-auto"
           />
-          <p className="lg:text-[24px] text-[20px] font-[700] text-center py-6 leading-tight">
-            Track Who Paid, When, and Where{" "}
-          </p>
+          <p className="lg:text-[24px] text-[20px] font-[700] text-center py-6 leading-tight px-6">
+          Track Who Paid, 
+          When, and Where          </p>
           <p className="text-center text-[16px]">
             Generate QR codes that adjust based on customer and transaction
             state.{" "}

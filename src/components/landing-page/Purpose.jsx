@@ -9,11 +9,9 @@ const Purpose = () => {
       {/* Header Section (unchanged) */}
       <div>
         <h1 className="lg:text-[40px] text-[30px] font-bold leading-tight lg:w-[644px] w-auto">
-          Purpose-Built Modules to Power Every Layer of Your Financial Stack
-        </h1>
-        <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-normal lg:pt-12 pt-4 pb-6">
-          From reconciliation to offline payments, checkout to agent operations
-          — each tool works standalone or as part of a unified infrastructure.
+        Purpose built modules for every layer of your financial stack        </h1>
+        <p className="text-[#1B1B1B] lg:w-[555px] w-auto leading-normal lg:pt-12 pt-4 pb-6">
+        Designed to adapt to your business, each module, from reconciliation and offline payments to smart checkout and agent tools, works independently or as part of a fully unified system.
         </p>
       </div>
 
@@ -31,12 +29,9 @@ const Purpose = () => {
         <div className="bg-[#0171DF]/10 rounded-md lg:w-[458px] w-auto lg:py-0 py-10 flex flex-col justify-center lg:px-8 px-6 lg:my-0 my-6">
           <p className="mb-4 text-start">ReconcileX</p>
           <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[342px] w-auto leading-tight">
-            Automated Reconciliation. Zero Guesswork
-          </h1>
-          <p className="text-[#1B1B1B] lg:w-[324px] w-auto my-5">
-            Automatically match incoming payments to the right invoices, orders,
-            or accounts—across bank transfers, wallets, and offline channels. No
-            spreadsheets. No manual tracking.
+          Reconciliation that handles itself          </h1>
+          <p className="text-[#1B1B1B] lg:w-[342px] w-auto my-5">
+          No more spreadsheets or second-guessing. ReconcileX automatically matches payments to the right invoices, orders, or accounts across bank transfers, wallets, and offline channels
           </p>
           <Button
             asChild
@@ -51,12 +46,10 @@ const Purpose = () => {
       <div className="lg:flex lg:flex-row flex-col gap-8 items-stretch justify-between lg:pb-30 pb-15">
         <div className="bg-[#0171DF]/10 rounded-md lg:w-[458px] w-auto lg:py-0 py-10 flex flex-col justify-center lg:px-8 px-6 lg:my-0 my-6">
           <p className="mb-4 text-start">Embedded finance</p>
-          <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[342px] w-auto leading-tight">
-            Programmable Payouts. No Manual Transfers
-          </h1>
-          <p className="text-[#1B1B1B] lg:w-[324px] w-auto my-5">
-            Flexible checkout built for — supporting logic-based routing,
-            embedded flows, fees, commissions, and more.
+          <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[354px] w-auto leading-tight">
+          Smart payouts, built into your flow          </h1>
+          <p className="text-[#1B1B1B] lg:w-[383px] w-auto my-5">
+          Move money exactly how your business needs with programmable, rules-based payouts that eliminate manual work and power new financial experiences.
           </p>
           <Button
             asChild

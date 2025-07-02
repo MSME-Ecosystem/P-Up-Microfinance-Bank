@@ -10,11 +10,9 @@ const Order = () => {
         <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center lg:w-[487px] w-auto">
           <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700]">
-            Offline Payment Support
-          </h2>
-          <p className="text-[16px] lg:mb-8 mb-4">
-            Handle transactions even in low or no-network areas with
-            synchronization once connectivity is restored.{" "}
+          Built in offline support          </h2>
+          <p className="text-[16px] lg:mb-8 mb-4 lg:leading-7">
+          No internet? No wahala. GareLite handles payments in low or no connectivity zones, then syncs everything once the connection returns.
           </p>
           <Button
             asChild
@@ -29,7 +27,6 @@ const Order = () => {
             alt="Offline Payment"
             height={442}
             width={495}
-            className=""
           />
         </div>
       </div>

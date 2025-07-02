@@ -16,9 +16,9 @@ const Cards = () => {
             />
           </div>
           <p className="font-[700] lg:text-[20px] text-[18px] py-5 text-center w-[255px] m-auto">
-            Invoice-Linked Virtual Account Matching{" "}
+            Invoice-linked virtual account matching{" "}
           </p>
-          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B]">
+          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] px-6">
             Assign a unique virtual account to each invoice{" "}
           </p>
         </div>
@@ -33,9 +33,9 @@ const Cards = () => {
             />
           </div>
           <p className="font-[700] lg:text-[20px] text-[18px] py-5 text-center">
-            ERP Integration & Auto-Posting{" "}
+            ERP integration & auto-posting{" "}
           </p>
-          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B]">
+          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] pt-5">
             Sync payments directly to your ERP and update records automatically{" "}
           </p>
         </div>
@@ -50,10 +50,10 @@ const Cards = () => {
             />
           </div>
           <p className="font-[700] lg:text-[20px] text-[18px] py-5 text-center ">
-            Real-Time Business Intelligence Dashboards{" "}
+            Real-Time business intelligence dashboards{" "}
           </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] ">
-            Visualize cashflow, payments, and performance as they happen{" "}
+            Visualize cashflow, payments, and performance as they happen.{" "}
           </p>
         </div>
       </div>

@@ -39,7 +39,7 @@ const EscrowRules = () => {
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
             Escrow Rules
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] lg:mb-6 w-[450px] ">
+          <p className="text-[16px] text-[#1B1B1B] lg:mb-6 w-[450px] lg:leading-7">
             Hold funds until approvals, conditions, or time-based rules are
             met—built for control and compliance.{" "}
           </p>

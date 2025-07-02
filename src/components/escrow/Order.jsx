@@ -14,9 +14,8 @@ const Order = () => {
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Cashier Wallets
           </h2>
-          <p className="text-[16px] lg:text-left text-center  lg:mb-8 mb-4 lg:w-[400px]">
-            Assign individual wallets to staff, devices, or branches and track
-            every inflow by source.
+          <p className="text-[16px] lg:text-left text-center  lg:mb-8 mb-4 lg:w-[400px] lg:leading-7">
+          Assign individual wallets to staff, devices, or branches and track every inflow by source for complete accountability.
           </p>
           <Button
             asChild

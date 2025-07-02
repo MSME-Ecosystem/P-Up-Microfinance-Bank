@@ -11,7 +11,7 @@ const Built = () => {
           <p className=" lg:text-left text-center">Use Case</p>
           <Button
             asChild
-            className="bg-[#0171DF] text-white h-10 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+            className="bg-[#0171DF] text-white h-10 lg:px-4 lg:w-auto w-full my-10 font-bold text-[18px] rounded-[5px]"
           >
             <Link href="#">Real - Life Scenario</Link>
           </Button>{" "}
@@ -23,7 +23,7 @@ const Built = () => {
                   transport park manager in Ilorin, prints dynamic QR codes for
                   each route and bus. Riders scan the QR on arrival, select
                   their seat, pay using their wallet, and receive a ticket via
-                  SMS
+                  SMS.
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ const Built = () => {
             </div>
           </div>
         </div>
-        <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute  ">
+        <div className=" w-[90%] lg:flex hidden justify-end items-end h-full absolute ">
           <Image src="/newhandb.png" alt="hand" height={900} width={900} />
         </div>
       </div>

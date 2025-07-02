@@ -11,7 +11,7 @@ const Ready = () => {
           <p className=" lg:text-left text-center">Use Case</p>
           <Button
             asChild
-            className="bg-[#0171DF] text-white h-11 px-24 my-10 font-bold text-[18px]"
+            className="bg-[#0171DF] text-white h-10 lg:px-4 lg:w-auto w-full my-10 font-bold text-[18px] rounded-[5px]"
           >
             <Link href="#">Real - Life Scenario</Link>
           </Button>{" "}
@@ -99,7 +99,6 @@ const Ready = () => {
             alt="hand"
             height={800}
             width={800}
-            className=""
           />
         </div>
       </div>

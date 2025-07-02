@@ -12,7 +12,7 @@ const ERP = () => {
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700]">
             ERP Integration
           </h2>
-          <p className=" lg:mb-8 mb-4 w-[450px]">
+          <p className=" lg:mb-8 mb-4 w-[450px] lg:leading-7">
             Sync wallet and escrow data with your ERP for seamless
             reconciliation and audit-ready records.{" "}
           </p>

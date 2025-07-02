@@ -12,11 +12,12 @@ const MDash = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center leading-8">
-            Multi-Channel Payment Acceptance
+            Multi channel payment acceptance{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Support collections via QR codes, payment links, PoS, bank
-            transfers, and mobile wallets to maximize payment options for users.
+            Allow users to pay how they prefer via QR codes, payment links, POS
+            terminals, bank transfers, or mobile wallets. One gateway, multiple
+            channels, endless possibilities.
           </p>
           <Button
             asChild
@@ -36,12 +37,13 @@ const MDash = () => {
         </div>
         <div className="h-[440px] lg:flex hidden flex-col justify-center">
           <p className="text-[16px] pb-4">Featuring</p>
-          <h2 className="py-6 text-[#0171DF] text-[32px] font-[700] ">
-            Multi-Channel Payment Acceptance
+          <h2 className="py-6 text-[#0171DF] text-[32px] font-[700] lg:w-[487px]">
+            Multi channel payment acceptance{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px] lg:mb-8 mb-4">
-            Support collections via QR codes, payment links, PoS, bank
-            transfers, and mobile wallets to maximize payment options for users.
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] lg:mb-8 mb-4 leading-7">
+            Allow users to pay how they prefer via QR codes, payment links, POS
+            terminals, bank transfers, or mobile wallets. One gateway, multiple
+            channels, endless possibilities.
           </p>
           <Button
             asChild

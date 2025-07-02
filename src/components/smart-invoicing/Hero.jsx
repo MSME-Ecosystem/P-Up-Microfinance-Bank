@@ -8,12 +8,11 @@ const Hero = () => {
     <div className="lg:py-40 pt-24 lg:flex lg:flex-row flex-col-reverse gap-16 justify-center">
       <div className="lg:pt-10 pt-0 lg:text-left text-center">
         <h1 className="lg:text-[48px] text-[30px] font-bold lg:w-[510px] w-auto leading-tight">
-          Send Smarter Invoices. Get Paid Without the Guesswork
+          Send smarter invoices. Get paid hassle-free!{" "}
         </h1>
-        <p className="text-[#1b1b1b] lg:w-[510px] w-auto pt-3">
-          Whether you're a solo freelancer or a busy micro-merchant, InvoIQ
-          helps you track payments, send branded invoices, and know exactly who
-          owes what—without spreadsheets or finance teams.
+        <p className="text-[#1b1b1b] lg:w-[510px] w-auto lg:pt-6 pt-3">
+          InvoIQ helps freelancers and micro-merchants track payments, send
+          branded invoices, and know who owes what, no spreadsheets needed!
         </p>
         <Button
           asChild

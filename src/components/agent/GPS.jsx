@@ -12,11 +12,9 @@ const GPS = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center text-nowrap">
-            GPS-Aware Territory Assignment
-          </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 w-[464px]">
-            Assign agents to specific zones or routes. Monitor movements and
-            ensure coverage.
+          GPS-Based territory assignment          </h2>
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 w-[464px] lg:leading-7">
+          Assign agents to specific zones or routes with built-in GPS tracking. Monitor movements, reduce overlap, and ensure complete territory coverage
           </p>
           <Button
             asChild

@@ -12,6 +12,7 @@ const page = () => {
         <Multi />
       </div>
       <Turning />
+
       <div className="lg:px-40 px-5">
         <GetStarted />
       </div>

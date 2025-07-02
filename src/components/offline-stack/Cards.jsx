@@ -19,7 +19,7 @@ const Cards = () => {
             Bluetooth Offline Payments{" "}
           </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B]">
-            Exchange tokens between phones—no SIM, no airtime, no Wi-Fi.
+            Exchange tokens between phones with no SIM, no airtime, no Wi-Fi.
           </p>
         </div>
         <div className="lg:w-[370px] w-auto py-15 bg-[#0171DF]/10 lg:px-10 px-6 pt-1 lg:m-0 m-6 rounded-lg">

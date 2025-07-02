@@ -10,11 +10,11 @@ const PaymentAutomation = () => {
         <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center lg:w-[487px] w-auto">
           <p className="text-[16px] lg:pb-4 pb-0">Payout</p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700]">
-            Payout Automation
+            Payout automation
           </h2>
-          <p className="text-[16px] lg:mb-0 mb-4">
-            Trigger daily, scheduled, or event-based bank transfers using
-            pre-set conditions.
+          <p className="text-[16px] lg:mb-0 mb-4 lg:leading-7">
+            Automate disbursements to banks or wallets using schedules,
+            thresholds, or custom triggers.
           </p>
           <Button
             asChild

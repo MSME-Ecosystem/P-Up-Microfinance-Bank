@@ -13,11 +13,11 @@ const Trust = () => {
             Featuring
           </p>
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Trust-Linked Payments{" "}
+            Trust at the point of payment{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4">
-            SmartLinks, QR codes, and checkouts carry merchant trust badges and
-            scores—right at point of payment.
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 lg:leading-7">
+            SmartLinks, QR codes, and checkouts display merchant trust badges
+            and scores—so buyers know who they’re paying.
           </p>
           <Button
             asChild
@@ -40,9 +40,9 @@ const Trust = () => {
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
             Verified Badges{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Dynamic badges display real merchant activity like “Reconciled
-            1,000+ Orders” or “Verified by 3 Platforms.
+          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 text-[#1B1B1B]">
+            Dynamic badges showcase real merchant stats like “1,000+ Orders
+            Reconciled” or “Verified by 3 Platforms.”
           </p>
           <Button
             asChild
@@ -59,7 +59,7 @@ const Trust = () => {
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
             Verified Badges{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] mb-8">
+          <p className="text-[16px] text-[#1B1B1B] mb-8 leading-7">
             Dynamic badges display real merchant activity like “Reconciled
             1,000+ Orders” or “Verified by 3 Platforms.
           </p>

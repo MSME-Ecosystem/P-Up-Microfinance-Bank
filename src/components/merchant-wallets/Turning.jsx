@@ -6,21 +6,21 @@ import Link from "next/link";
 const Turning = () => {
   return (
     <div>
-      <div className="bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden  lg:pb-20  pt-10 lg:mt-40 mt-20">
-        <div className="flex lg:px-40 px-5  ">
+      <div className=" bg-[#EFFAF8] h-auto relative mb-28  overflow-hidden  lg:pb-20  pt-10 lg:mt-40 mt-20">
+        <div className="flex  lg:px-40 px-5 ">
           <div className=" ">
             <p className=" lg:text-left text-center">Use Case</p>
             <Button
-              asChild
-              className="bg-[#0171DF] text-white h-11 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
-            >
-              <Link href="#">Real - Life Scenario</Link>
-            </Button>{" "}
+            asChild
+            className="bg-[#0171DF] text-white h-10 lg:px-4 lg:w-auto w-full my-10 font-bold text-[18px] rounded-[5px]"
+          >
+            <Link href="#">Real - Life Scenario</Link>
+          </Button>{" "}
             <div className="flex flex-col  ">
               <div className=" lg:w-[100%] w-full">
                 <div className="flex-1 text-[#1B1B1B]">
                   <p>
-                    <span className="font-bold text-black">Unity</span> Women’s
+                    <span className="font-bold text-black">Unity</span> Women's
                     Coop has 300 members. Each has
                   </p>
 
@@ -69,7 +69,6 @@ const Turning = () => {
               alt="hand"
               height={900}
               width={900}
-              className=""
             />
           </div>
         </div>
