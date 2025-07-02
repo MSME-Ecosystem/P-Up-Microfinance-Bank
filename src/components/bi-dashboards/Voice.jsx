@@ -13,11 +13,11 @@ const Voice = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Multilingual & Voice-Enabled{" "}
+            Voice-Enabled & Multilanguage{" "}
           </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4">
-            Team members can interact in local languages or request summaries
-            via WhatsApp voice command.
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 lg:leading-7">
+            Team members can get updates or summaries in local languages even
+            through WhatsApp voice commands
           </p>
           <Button
             asChild
@@ -38,11 +38,11 @@ const Voice = () => {
             Featuring
           </p>
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Exportable Reports for Taxes & Audits{" "}
+            Tap-to-export reports for taxes and audits{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Download audit-friendly financial summaries with one tap—ideal for
-            cooperatives, NGOs, and small teams.
+            One-tap download of audit-friendly summaries built for cooperatives,
+            NGOs, and growing teams.
           </p>
           <Button
             asChild
@@ -57,11 +57,11 @@ const Voice = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center w-[487px]">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
-            Exportable Reports for Taxes & Audits{" "}
+            Tap-to-export reports for taxes and audits{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] mb-8">
-            Download audit-friendly financial summaries with one tap—ideal for
-            cooperatives, NGOs, and small teams.
+          <p className="text-[16px] text-[#1B1B1B] mb-8 leading-7">
+            One-tap download of audit-friendly summaries built for cooperatives,
+            NGOs, and growing teams.
           </p>
           <Button
             asChild

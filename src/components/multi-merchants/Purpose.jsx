@@ -10,13 +10,11 @@ const Purpose = () => {
         <div className="lg:flex block justify-center gap-12">
           <div className="lg:h-[450px] h-auto flex flex-col justify-center lg:w-[540px] w-auto">
             <p className=" lg:text-[48px] text-[31px] font-[700] lg:leading-14 leading-8 lg:text-left text-center lg:w-[550px] w-auto ">
-              One Checkout. Multiple Merchants. Zero <br />
-              Hassle.
+              One checkout. Multiple merchants. Zero <br />
+              hassle.
             </p>
             <p className="lg:py-6 py-8 text-[#1B1B1B] lg:text-left text-center w-[510px]">
-              CartLink powers smarter, faster group selling by enabling a single
-              checkout experience that splits payments, routes orders, and
-              reconciles for every seller involved—automatically.
+            Enable smarter group selling with a unified checkout experience that automatically splits payments, routes funds, and reconciles for each merchant involved.
             </p>
             <Button asChild className="bg-[#0F226B] text-white h-11 font-bold ">
               <Link href="#">Get Started</Link>

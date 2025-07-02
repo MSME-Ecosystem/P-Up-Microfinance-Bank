@@ -34,12 +34,18 @@ const WalletLogic = () => {
             Wallet system
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Wallet Logic & Internal Transfers
+            Custom wallets & internal transfers{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Create programmable internal wallets with transfer rules, balance
-            logic, and sub-wallets.
+            Create smart wallets with internal transfer rules, role-based
+            access, and full transaction traceability.
           </p>
+          <Button
+            asChild
+            className="bg-[#0F226B] text-white h-11 mt-5 lg:mt-10 w-full font-bold px-22  mb-6"
+          >
+            <Link href="#">Set up wallets</Link>
+          </Button>
         </div>
         <div>
           <Image
@@ -52,12 +58,12 @@ const WalletLogic = () => {
         </div>
         <div className="h-[440px] lg:flex hidden flex-col justify-center">
           <p className="text-[16px] pb-4"> Wallet system</p>
-          <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
-            Wallet Logic & Internal Transfers
+          <h2 className="py-6 text-[#0171DF] text-[32px] font-[700] lg:w-[487px] w-auto">
+            Custom wallets & internal transfers{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px]">
-            Create programmable internal wallets with transfer rules, balance
-            logic, and sub-wallets.
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] lg:leading-7">
+            Create smart wallets with internal transfer rules, role-based
+            access, and full transaction traceability.
           </p>
           <Button
             asChild

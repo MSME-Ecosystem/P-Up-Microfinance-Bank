@@ -8,12 +8,9 @@ const Everything = () => {
     <div className="text-[#000000] lg:py-28 py-10">
       <div className="text-center mb-12">
         <h1 className="lg:text-[40px] text-[28px] font-bold lg:w-[718px] w-auto mx-auto leading-tight">
-          Everything You Need to Build, Run, and Scale Commerce Systems
-        </h1>
+        Everything you need to build, run, and scale commerce systems        </h1>
         <p className="text-[#1B1B1B] lg:w-[462px] w-auto leading-tight mx-auto py-6">
-          From agent payments in the field to intelligent accounting in the
-          cloud — explore how our modular suite fits every layer of your
-          business.
+        Whether it's agent payments in remote areas or real-time accounting in the cloud, our modular suite adapts to every layer of your business needs, online or offline.
         </p>
       </div>
 
@@ -32,11 +29,9 @@ const Everything = () => {
             Smart checkout
           </p>
           <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[372px] w-auto lg:leading-[44px] leading-normal lg:py-1 py-2">
-            Checkout That Thinks Like Your Business
-          </h1>
-          <p className="lg:w-[462px] w-auto text-[#1B1B1B] py-5 leading-7">
-            Flexible checkout built for merchants — supporting logic-based
-            routing, embedded flows, fees, commissions, and more.
+          Check out that works like you Do          </h1>
+          <p className="lg:w-[462px] w-auto text-[#1B1B1B] py-5">
+          Built with logic-based routing, embedded flows, fee handling, commissions, and more. It is designed to simplify merchant experiences.
           </p>
           <Button
             asChild
@@ -50,12 +45,9 @@ const Everything = () => {
         <div>
           <p className="text-[14px] mb-3">Offline Stack</p>
           <h1 className="lg:text-[24px] text-[20px] font-bold text-[#0171DF] lg:w-[374px] w-auto leading-tight">
-            Collect and reconcile payments without internet access.
-          </h1>
+          Stay connected even without internet          </h1>
           <p className="lg:w-[462px] w-auto text-[#1B1B1B] py-5 leading-6">
-            AirVend enables merchants and field agents to collect, sync, and
-            reconcile payments—entirely offline. Built for markets where
-            internet isn't guaranteed but business must go on.
+          AirVend lets merchants and agents accept, sync, and reconcile payments offline so business doesn’t stop when the internet does. Seamless offline-first infrastructure for markets where connectivity can’t be counted on.
           </p>
           <Button
             asChild

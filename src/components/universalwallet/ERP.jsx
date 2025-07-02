@@ -11,14 +11,13 @@ const ERP = () => {
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
           </p>
-          <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Single Wallet for Multiple Merchants
-          </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4">
-            Buyers top up once and pay across all participating merchants
-            without switching wallets or apps.
+          <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center ">
+          One wallet for all your <br className="lg:block hidden"/>
+          merchants          </h2>
+          <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 lg:leading-7 lg:pr-0 pr-5">
+          Buyers top up once and pay across all participating merchants without switching wallets or apps.
           </p>
-          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-24">
+          <Button asChild className="bg-[#0F226B] text-white h-11 font-bold px-24 lg:mr-0 mr-5">
             <Link href="#">Start using Unipouch</Link>
           </Button>{" "}
         </div>

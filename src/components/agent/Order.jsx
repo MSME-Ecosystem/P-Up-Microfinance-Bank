@@ -10,11 +10,9 @@ const Order = () => {
         <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center lg:w-[487px] w-auto">
           <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] text-nowrap">
-            Order-by-Order Reconciliation
-          </h2>
-          <p className="text-[16px] lg:mb-8 mb-4 lg:w-[462px] w-auto">
-            Each merchant receives a detailed breakdown of items bought,
-            including quantity, value, and buyer details{" "}
+          Detailed order reconciliation          </h2>
+          <p className="text-[16px] lg:mb-8 mb-4 lg:w-[462px] w-auto lg:leading-7">
+          Merchants get a full breakdown of every order collected in the field, including items sold, quantities, values, and customer details. No guesswork, no gaps.
           </p>
           <Button
             asChild

@@ -12,11 +12,9 @@ const MDash = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Mobile Dashboards for Field Ops
-          </h2>
-          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Agents access tools for collections, deposits, disbursements, and
-            customer interactions right from their phones.{" "}
+          Mobile dashboards for field teams          </h2>
+          <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4 ">
+          Give agents access to collections, disbursements, deposits, customer details, etc., right from their phones. While you stay updated, even when they are on the move.
           </p>
           <Button className="bg-[#0F226B] text-white h-11 font-bold px-22 w-full mb-6">
             Launch Dashboard
@@ -33,12 +31,10 @@ const MDash = () => {
         </div>
         <div className="h-[440px] lg:flex hidden flex-col justify-center">
           <p className="text-[16px] pb-4">Featuring</p>
-          <h2 className="py-6 text-[#0171DF] text-[32px] font-[700] text-nowrap">
-            Mobile Dashboards for Field Ops
-          </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px] mb-8">
-            Agents access tools for collections, deposits, disbursements, and
-            customer interactions right from their phones.
+          <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
+          Mobile dashboards for field teams          </h2>
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] mb-8 leading-7">
+          Give agents access to collections, disbursements, deposits, customer details, etc., right from their phones. While you stay updated, even when they are on the move.
           </p>
           <Button className="bg-[#0F226B] text-white h-11 font-bold px-22">
             Launch Dashboard

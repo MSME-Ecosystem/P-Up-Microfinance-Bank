@@ -11,7 +11,7 @@ const Ready = () => {
           <p className=" lg:text-left text-center">Use Case</p>
           <Button
             asChild
-            className="bg-[#0171DF] text-white h-10 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+            className="bg-[#0171DF] text-white h-11 lg:px-4 lg:w-auto w-full my-10 font-bold text-[18px] rounded-[5px]"
           >
             <Link href="#">Real - Life Scenario</Link>
           </Button>{" "}
@@ -20,8 +20,8 @@ const Ready = () => {
               <div className="flex-1 text-[#1B1B1B]">
                 <p>
                   <span className="font-bold text-black">Chinedu,</span> sales
-                  manager for AgroLink Fertilizers, uses AgentIQ to monitor 120
-                  field reps across Nigeria.{" "}
+                  manager for AgroLink Fertilizers, uses <span className="text-[#0171DF] font-bold">AgentIQ</span> to monitor <span className="font-bold">120
+                  field agents</span> across Nigeria.{" "}
                 </p>
               </div>
             </div>
@@ -36,14 +36,14 @@ const Ready = () => {
                   className="rotate-90 "
                 />
               </div>
-              <div className="bg-[#E7F7E6] rounded-[10px]  pl-8 lg:pr-28 py-8 w-full lg:w-[65%]">
+              <div className="bg-[#E7F7E6] rounded-[10px]  pl-8 lg:pr-20 py-8 w-full lg:w-[65%]">
                 <p className="text-[#1B1B1B]"> He sees </p>
                 <ul className="list-disc px-6 space-y-4 pt-5 text-[14px]">
-                  <li> Who visited farmers in Nasarawa today</li>
-                  <li>How much each rep collected in POS payments </li>
-                  <li>How many refunds were requested in Enugu</li>
-                  <li>Which territory is underperforming</li>
-                  <li>Which agent needs retraining</li>
+                  <li> Which agents visited farmers in Nasarawa today</li>
+                  <li>How much each agent collected via POS </li>
+                  <li>Settlement status for daily collections</li>
+                  <li>How many refunds were issued in Enugu</li>
+                  <li>Which agents are outperforming</li>
                 </ul>
               </div>
             </div>

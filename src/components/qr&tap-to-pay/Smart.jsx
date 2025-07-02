@@ -53,11 +53,10 @@ const Smart = () => {
             />
           </div>
           <p className="font-[700] lg:text-[24px] text-[18px] py-5 text-center leading-tight">
-            Track and Reconcile in Real Time{" "}
-          </p>
+          Track Every Payment 
+          and Reconcile in Real Time          </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] ">
-            Stay on top of who paid, when, and for what—automatically.
-          </p>
+          See who paid, when, and for what automatically.          </p>
         </div>
       </div>
     </div>

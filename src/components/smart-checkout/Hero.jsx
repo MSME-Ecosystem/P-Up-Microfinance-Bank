@@ -8,12 +8,12 @@ const Hero = () => {
     <div className="lg:pt-40 pt-32 lg:pb-20 pb-32  lg:flex lg:flex-row flex-col-reverse gap-16 items-center justify-center">
       <div className="lg:text-left text-center">
         <h1 className="lg:text-[48px] text-[32px] font-bold lg:w-[510px] w-auto leading-tight">
-          Multi-merchant checkout built for the new commerce stack.
+          A Multi-merchant checkout for the modern commerce era{" "}
         </h1>
         <p className="text-[#1b1b1b] lg:w-[510px] w-auto lg:mt-3 mt-5">
           UniTap is a fully adaptive, white-label checkout engine that lets
           buyers pay for products across multiple vendors, payment types, and
-          platforms—through a single, seamless interface.
+          platforms through a single, seamless interface.
         </p>
         <Button
           asChild

@@ -12,7 +12,7 @@ const Risky = () => {
             <p className=" lg:text-left text-center">Use Case</p>
             <Button
               asChild
-              className="bg-[#0171DF] text-white h-11 lg:px-6 lg:w-auto w-full my-10 font-bold text-[18px]"
+              className="bg-[#0171DF] text-white h-11 lg:px-4 rounded-[5px] lg:w-auto w-full my-10 font-bold text-[18px]"
             >
               <Link href="#">Real - Life Scenario</Link>
             </Button>{" "}

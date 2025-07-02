@@ -12,11 +12,12 @@ const Wallet = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Wallet + Bank Settlements Per Merchant
+            Wallet & bank settlements by merchant{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-0 mb-4">
-            Support flexible payouts—whether funds go to field wallets or
-            straight to merchant accounts
+            Choose where payments land. Whether funds go to agent wallets or
+            directly to merchant accounts, settlements are flexible and built
+            around your flow.
           </p>
           <Button
             asChild
@@ -37,11 +38,12 @@ const Wallet = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-6 text-[#0171DF] text-[32px] font-[700]">
-            Wallet + Bank Settlements Per Merchant
+            Wallet & bank settlements by merchant{" "}
           </h2>
-          <p className="text-[16px] text-[#1B1B1B] w-[462px] mb-8">
-            Support flexible payouts—whether funds go to field wallets or
-            straight to merchant accounts
+          <p className="text-[16px] text-[#1B1B1B] w-[462px] mb-8 leading-7">
+            Choose where payments land. Whether funds go to agent wallets or
+            directly to merchant accounts, settlements are flexible and built
+            around your flow.
           </p>
           <Button
             asChild

@@ -19,7 +19,7 @@ const Dynamic = () => {
           </p>
           <Button
             asChild
-            className="bg-[#0F226B] text-white h-10 text-[20px] px-26 mb-6 lg:w-auto w-full"
+            className="bg-[#0F226B] text-white h-11 font-bold px-26 mb-6 lg:w-auto w-full"
           >
             <Link href="#">Build Checkout</Link>
           </Button>{" "}
@@ -39,7 +39,7 @@ const Dynamic = () => {
             Dynamic Checkout Builder{" "}
           </h2>
           <p className="text-[16px] text-[#1B1B1B] lg:mb-6 w-[450px] leading-7">
-            Trigger custom checkout pages with embedded pricing, product info,
+            Trigger custom checkout pages with embedded pricing, product information,
             and agent ID—automatically
           </p>
           <Button

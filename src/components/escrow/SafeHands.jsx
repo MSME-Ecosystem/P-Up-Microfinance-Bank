@@ -18,7 +18,7 @@ const SafeHands = () => {
               className="m-auto mt-15"
             />
           </div>
-          <p className="font-[700] lg:text-[24px] text-[18px] py-5 text-center w-[255px] m-auto leading-tight">
+          <p className="font-[700] lg:text-[24px] text-[18px] py-5 text-center w-[255px] m-auto leading-tight lg:mt-3">
             Cashier Wallets with Role-Based Controls{" "}
           </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B]">
@@ -35,10 +35,10 @@ const SafeHands = () => {
               className="m-auto mt-15"
             />
           </div>
-          <p className="font-[700] lg:text-[24px] text-[18px] py-8 text-center leading-tight">
+          <p className="font-[700] lg:text-[24px] text-[18px] pt-8 text-center leading-tight">
             Programmable Escrow Logic{" "}
           </p>
-          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B]">
+          <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] lg:mt-5">
             Hold funds until they're approved by managers or synced with ERP
             systems.{" "}
           </p>
@@ -53,12 +53,12 @@ const SafeHands = () => {
               className="m-auto mt-15"
             />
           </div>
-          <p className="font-[700] lg:text-[24px] text-[18px] py-5 text-center leading-tight">
+          <p className="font-[700] lg:text-[24px] text-[18px] py-6 text-center leading-tight">
             Automated End-of-Day Reconciliation{" "}
           </p>
           <p className="lg:text-[16px] text-[14px] text-center text-[#1B1B1B] ">
             Generate shift-based summaries and real-time cashflow logs—no
-            spreadsheets needed.{" "}
+            spreadsheets needed.
           </p>
         </div>
       </div>

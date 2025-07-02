@@ -10,15 +10,13 @@ const Order = () => {
         <div className="lg:h-[440px] h-auto flex flex-col justify-center lg:text-left text-center lg:w-[487px] w-auto">
           <p className="text-[16px] lg:pb-4 pb-0">Featuring</p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] text-nowrap">
-            Order-by-Order Reconciliation
-          </h2>
-          <p className="text-[16px] lg:mb-8 mb-4">
-            Each merchant receives a detailed breakdown of items bought,
-            including quantity, value, and buyer details{" "}
+          Order level reconciliation          </h2>
+          <p className="text-[16px] lg:mb-8 mb-4 lg:leading-7">
+          Each merchant receives a detailed breakdown of items sold, complete with quantity, value, and buyer details for every order.
           </p>
           <Button
             asChild
-            className="bg-[#0F226B] text-white h-11 font-bold px-24 lg:mb-0 mb-6"
+            className="bg-[#0F226B] text-white h-11 font-bold px-20 lg:mb-0 mb-6"
           >
             <Link href="#">Track orders</Link>
           </Button>{" "}

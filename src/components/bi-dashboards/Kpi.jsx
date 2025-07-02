@@ -12,12 +12,11 @@ const Kpi = () => {
           <p className="text-[16px] lg:pb-4 pb-0 lg:text-left text-center">
             Featuring
           </p>
-          <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Clear KPIs Without the Jargon{" "}
-          </h2>
-          <p className="text-[16px] lg:text-left text-center  mb-4 text-[#1B1B1B] lg:w-[464px] w-auto">
-            Instantly view revenue, expenses, profit, and cash flow in a
-            mobile-friendly dashboard.{" "}
+          <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center lg:w-[487px] w-auto">
+          Know your numbers no 
+          Banking & Finance degree needed          </h2>
+          <p className="text-[16px] lg:text-left text-center  mb-4 text-[#1B1B1B] lg:w-[487px] w-auto lg:leading-7">
+          Track revenue, expenses, profit, and cash flow in a clean, mobile-friendly dashboard. No educational qualifications needed.
           </p>
           <Button
             asChild
@@ -38,11 +37,9 @@ const Kpi = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center">
-            Visual Reports for Non-Numbers People{" "}
-          </h2>
+          Reports made for everyday people not just accountants          </h2>
           <p className="text-[16px] lg:text-left text-center mb-4 text-[#1B1B1B]">
-            Pie charts, trend lines, bar graphs—all automatically generated for
-            easier decisions and presentations.{" "}
+          Pie charts, trend lines, bar graphs automatically created to support smarter decisions and better presentations.
           </p>
           <Button
             asChild
@@ -63,11 +60,9 @@ const Kpi = () => {
         <div className="h-[440px] lg:flex hidden flex-col justify-center w-[487px]">
           <p className="text-[16px] pb-4">Featuring</p>
           <h2 className="py-5 text-[#0171DF] text-[32px] font-[700]">
-            Visual Reports for Non-Numbers People{" "}
-          </h2>
-          <p className="text-[16px] text-[#1B1B1B] lg:mb-8 mb-4">
-            Pie charts, trend lines, bar graphs—all automatically generated for
-            easier decisions and presentations.{" "}
+          Reports made for everyday people not just accountants          </h2>
+          <p className="text-[16px] text-[#1B1B1B] lg:mb-8 mb-4 leading-7">
+          Pie charts, trend lines, bar graphs automatically created to support smarter decisions and better presentations.
           </p>
           <Button
             asChild
