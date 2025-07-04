@@ -9,12 +9,9 @@ import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const pathname = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [clickedDropdown, setClickedDropdown] = useState(null);
-  const dropdownRef = useRef(null);
-  const buttonRef = useRef(null);
-  const hoverTimeoutRef = useRef(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const navbarRef = useRef(null);
 
   const navigation = [
     {
@@ -131,54 +128,30 @@ export function Navbar() {
     { name: "Documentation", href: "#" },
   ];
 
-  // Close dropdowns when route changes
+  // Close menus when route changes
   useEffect(() => {
-    closeAllDropdowns();
-    setIsMenuOpen(false);
+    setActiveDropdown(null);
+    setMobileMenuOpen(false);
   }, [pathname]);
 
+  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        clickedDropdown &&
-        !dropdownRef.current?.contains(event.target) &&
-        !buttonRef.current?.contains(event.target)
-      ) {
-        closeAllDropdowns();
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setActiveDropdown(null);
       }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [clickedDropdown]);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
-  const toggleDropdown = (itemName) => {
-    if (openDropdown === itemName) {
-      closeAllDropdowns();
-    } else {
-      setOpenDropdown(itemName);
-      setClickedDropdown(itemName);
-    }
-  };
-
-  const closeAllDropdowns = () => {
-    setOpenDropdown(null);
-    setClickedDropdown(null);
-    // Clear any pending timeout when closing manually
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current);
-      hoverTimeoutRef.current = null;
-    }
-  };
-
-  // Close mobile menu when screen size changes to desktop
+  // Close mobile menu when resizing to desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
-        setIsMenuOpen(false);
-        closeAllDropdowns();
+        setMobileMenuOpen(false);
+        setActiveDropdown(null);
       }
     };
 
@@ -186,293 +159,225 @@ export function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const toggleDropdown = (itemName) => {
+    setActiveDropdown(activeDropdown === itemName ? null : itemName);
+  };
+
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+    setActiveDropdown(null);
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center bg-[#F0FAF8]">
-      {/* <div className="container mx-auto"> */}
-      <div className="w-full mx-auto lg:px-16 px-5 ">
+    <header 
+      ref={navbarRef}
+      className="fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center bg-[#F0FAF8]"
+    >
+      <div className="w-full mx-auto lg:px-16 px-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center space-x-2"
-            onClick={closeAllDropdowns}
-          >
+          <Link href="/" className="flex items-center space-x-2" onClick={handleLinkClick}>
             <div className="w-10 h-10 flex items-center justify-center">
-              <Image src={"/newlogo.svg"} alt="Logo" width={45} height={45} />
+              <Image src="/newlogo.svg" alt="Logo" width={45} height={45} />
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 h-full">
-            {navigation.map((item) =>
-              item.dropdown ? (
-                <div
-                  key={item.name}
-                  className="relative group h-full flex items-center"
-                  onMouseEnter={() => {
-                    // Clear any existing timeout when entering
-                    if (hoverTimeoutRef.current) {
-                      clearTimeout(hoverTimeoutRef.current);
-                      hoverTimeoutRef.current = null;
-                    }
-                    setOpenDropdown(item.name);
-                  }}
-                  onMouseLeave={() => {
-                    // Only set timeout if dropdown is open and not clicked
-                    if (
-                      openDropdown === item.name &&
-                      clickedDropdown !== item.name
-                    ) {
-                      hoverTimeoutRef.current = setTimeout(() => {
-                        setOpenDropdown(null);
-                      }, 500); // 0.5 second delay
-                    }
-                  }}
-                >
-                  <button
-                    ref={buttonRef}
-                    className="text-gray-700 text-[14px] font-medium transition-colors flex items-center h-full hover:text-[#0F226B]"
-                    onClick={() => toggleDropdown(item.name)}
-                  >
-                    {item.name}
-                    <ChevronDown
-                      className={`ml-1 h-4 w-4 transition-transform ${
-                        openDropdown === item.name ? "rotate-180" : ""
+            {navigation.map((item) => (
+              <div key={item.name} className="relative h-full flex items-center">
+                {item.dropdown ? (
+                  <>
+                    <button
+                      className={`text-gray-700 text-[14px] font-medium flex items-center h-full hover:text-[#0F226B] ${
+                        activeDropdown === item.name ? "text-[#0F226B]" : ""
                       }`}
-                    />
-                  </button>
-
-                  {/* Full-width dropdown container */}
-                  {(openDropdown === item.name ||
-                    clickedDropdown === item.name) && (
-                    <div
-                      ref={dropdownRef}
-                      className="fixed left-0 right-0 top-[70px] bg-[#F0FAF8] z-50 shadow-lg"
-                      onMouseEnter={() => {
-                        // Clear timeout when entering dropdown
-                        if (hoverTimeoutRef.current) {
-                          clearTimeout(hoverTimeoutRef.current);
-                          hoverTimeoutRef.current = null;
-                        }
-                      }}
-                      onMouseLeave={() => {
-                        // Only set timeout if dropdown is open and not clicked
-                        if (
-                          openDropdown === item.name &&
-                          clickedDropdown !== item.name
-                        ) {
-                          hoverTimeoutRef.current = setTimeout(() => {
-                            setOpenDropdown(null);
-                          }, 500); // 0.5 second delay
-                        }
-                      }}
+                      onClick={() => toggleDropdown(item.name)}
+                      onMouseEnter={() => setActiveDropdown(item.name)}
                     >
-                      <div className="container mx-auto px-8">
-                        <div className="flex gap-[70px]">
-                          {/* Image section on the left */}
-                          <div className="w-[295px] h-[294px] relative my-10 hidden md:block">
-                            <Image
-                              src="/dropdown-image.svg"
-                              alt="Dropdown image"
-                              fill
-                              className="object-cover"
-                            />
-                            <div className="absolute -bottom-40 left-0 p-4 w-full space-y-6">
-                              <h3 className="font-bold text-[#000000]">
-                                Use case
-                              </h3>
-                              <p className="text-[12px] text-[#000000B2]">
-                                List of all P- UPS Products
-                              </p>
-                              {/* <p className="underline text-[#121660] hover:text-[#0F226B] cursor-pointer">
-                                Explore all
-                              </p> */}
-                            </div>
-                          </div>
+                      {item.name}
+                      <ChevronDown
+                        className={`ml-1 h-4 w-4 transition-transform ${
+                          activeDropdown === item.name ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
 
-                          {/* Links section on the right */}
-                          <div className="flex-1 p-4 md:p-6">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-                              {item.dropdown.map((subItem) => (
-                                <Link
-                                  key={subItem.name}
-                                  href={subItem.href}
-                                  className="flex items-start space-x-3 p-3 rounded-md transition-colors  group/item"
-                                  onClick={closeAllDropdowns}
-                                >
-                                  <div className="relative w-10 h-10 flex-shrink-0 rounded-md overflow-hidden">
-                                    {/* Normal state */}
-                                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-200 group-hover/item:opacity-0">
+                    {activeDropdown === item.name && (
+                      <div
+                        className="fixed left-0 right-0 top-[70px] bg-[#F0FAF8] z-50 shadow-lg"
+                        onMouseLeave={() => setActiveDropdown(null)}
+                      >
+                        <div className="container mx-auto px-8">
+                          <div className="flex gap-[70px]">
+                            <div className="w-[295px] h-[294px] relative my-10 hidden md:block">
+                              <Image
+                                src="/dropdown-image.svg"
+                                alt="Dropdown image"
+                                fill
+                                className="object-cover"
+                              />
+                              <div className="absolute -bottom-40 left-0 p-4 w-full space-y-6">
+                                <h3 className="font-bold text-[#000000]">Use case</h3>
+                                <p className="text-[12px] text-[#000000B2]">
+                                  List of all P- UPS Products
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="flex-1 p-4 md:p-6">
+                              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                                {item.dropdown.map((subItem) => (
+                                  <Link
+                                    key={subItem.name}
+                                    href={subItem.href}
+                                    className="flex items-start space-x-3 p-3 rounded-md transition-colors  group/item"
+                                    onClick={handleLinkClick}
+                                  >
+                                    <div className="relative w-10 h-10 flex-shrink-0 rounded-md overflow-hidden">
                                       <Image
                                         src={subItem.normalImage}
                                         alt={subItem.name}
                                         width={40}
                                         height={40}
-                                        className="object-contain"
+                                        className="group-hover/item:opacity-0 transition-opacity absolute"
                                       />
-                                    </div>
-                                    {/* Hover state */}
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover/item:opacity-100">
                                       <Image
                                         src={subItem.hoverImage}
                                         alt={subItem.name}
                                         width={40}
                                         height={40}
-                                        className="object-contain"
+                                        className="opacity-0 group-hover/item:opacity-100 transition-opacity absolute"
                                       />
                                     </div>
-                                  </div>
-                                  <div className="flex-1">
-                                    <span className="text-sm font-medium text-gray-900 block">
-                                      {subItem.name}
-                                    </span>
-                                    <span className="text-xs text-gray-500 mt-1 block">
-                                      {subItem.description}
-                                    </span>
-                                  </div>
-                                </Link>
-                              ))}
+                                    <div>
+                                      <span className="text-sm font-medium text-gray-900 block">
+                                        {subItem.name}
+                                      </span>
+                                      <span className="text-xs text-gray-500 mt-1 block">
+                                        {subItem.description}
+                                      </span>
+                                    </div>
+                                  </Link>
+                                ))}
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-700 text-[14px] font-medium transition-colors h-full flex items-center hover:text-[#0F226B]"
-                  onClick={closeAllDropdowns}
-                >
-                  {item.name}
-                </Link>
-              )
-            )}
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="text-gray-700 text-[14px] font-medium h-full flex items-center hover:text-[#0F226B]"
+                    onClick={handleLinkClick}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
+            ))}
           </nav>
 
-          {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center space-x-4 h-full">
+          {/* Desktop Buttons */}
+          <div className="hidden lg:flex items-center space-x-4">
             <Button
               asChild
-              className="border border-[#0F226B] bg-transparent text-[#0F226B] h-10 hover:bg-[#0F226B] hover:text-white transition-colors"
+              variant="outline"
+              className="border-[#0F226B] text-[#0F226B] hover:bg-[#0F226B] hover:text-white h-10"
             >
-              <Link href="#" onClick={closeAllDropdowns}>
-                Sign in
-              </Link>
+              <Link href="#" onClick={handleLinkClick}>Sign in</Link>
             </Button>
-            <Button
-              asChild
-              className="bg-[#0F226B] text-white h-10 hover:bg-[#0a1a52] transition-colors"
-            >
-              <Link href="#" onClick={closeAllDropdowns}>
-                Register
-              </Link>
+            <Button className="bg-[#0F226B] hover:bg-[#0a1a52] h-10">
+              <Link href="#" onClick={handleLinkClick}>Register</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="lg:hidden hover:bg-transparent p-2"
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-              closeAllDropdowns();
-            }}
+          <button
+            className="lg:hidden p-2 text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-[#000000]" />
-            ) : (
-              <Menu className="h-6 w-6 text-[#000000]" />
-            )}
-          </Button>
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-[70px] bg-white shadow-lg pb-4 overflow-y-auto">
-            <nav className="flex flex-col space-y-1 px-4">
-              {navigation.map((item) =>
-                item.dropdown ? (
-                  <div
-                    key={item.name}
-                    className="flex flex-col border-b border-gray-100"
-                  >
-                    <button
-                      onClick={() => toggleDropdown(item.name)}
-                      className="flex items-center justify-between text-gray-700 font-medium transition-colors px-2 py-4 hover:text-[#0F226B] w-full text-left"
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden fixed inset-0 top-[70px] bg-white z-40 overflow-y-auto pb-8">
+            <div className="px-5 pt-4">
+              {navigation.map((item) => (
+                <div key={item.name} className="mb-2">
+                  {item.dropdown ? (
+                    <>
+                      <button
+                        className="flex items-center justify-between w-full py-3 text-gray-700 font-medium"
+                        onClick={() => toggleDropdown(item.name)}
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown
+                          className={`h-4 w-4 transition-transform ${
+                            activeDropdown === item.name ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+
+                      {activeDropdown === item.name && (
+                        <div className="pl-4 space-y-3 mb-4">
+                          {item.dropdown.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              href={subItem.href}
+                              className="flex items-start space-x-3 p-3 rounded-lg"
+                              onClick={handleLinkClick}
+                            >
+                              <div className="w-8 h-8 flex-shrink-0">
+                                <Image
+                                  src={subItem.normalImage}
+                                  alt={subItem.name}
+                                  width={32}
+                                  height={32}
+                                />
+                              </div>
+                              <div>
+                                <div className="text-sm font-medium text-gray-900">
+                                  {subItem.name}
+                                </div>
+                                <div className="text-xs text-gray-500">
+                                  {subItem.description}
+                                </div>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="block py-3 text-gray-700 font-medium"
+                      onClick={handleLinkClick}
                     >
                       {item.name}
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform ${
-                          openDropdown === item.name ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {openDropdown === item.name && (
-                      <div className="pl-2 py-2 grid grid-cols-1 gap-1 bg-gray-50 rounded-lg mb-2">
-                        {item.dropdown.map((subItem) => (
-                          <Link
-                            key={subItem.name}
-                            href={subItem.href}
-                            className="flex items-start space-x-3 p-3 rounded-md hover:bg-[#D9EFEA]"
-                            onClick={closeAllDropdowns}
-                          >
-                            <div className="w-8 h-8 flex-shrink-0 rounded-md flex items-center justify-center ">
-                              <Image
-                                src={subItem.normalImage}
-                                alt={subItem.name}
-                                width={32}
-                                height={32}
-                                className="object-contain"
-                              />
-                            </div>
-                            <div className="flex-1">
-                              <span className="text-sm font-medium block text-black hover:text-[#0F226B]">
-                                {subItem.name}
-                              </span>
-                              <span className="text-xs text-gray-500 block">
-                                {subItem.description}
-                              </span>
-                            </div>
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-700 font-medium transition-colors px-2 py-4 hover:text-[#0F226B] border-b border-gray-100"
-                    onClick={closeAllDropdowns}
-                  >
-                    {item.name}
-                  </Link>
-                )
-              )}
-              <div className="flex flex-col space-y-3 pt-4 px-2">
+                    </Link>
+                  )}
+                </div>
+              ))}
+
+              <div className="mt-6 space-y-3">
                 <Button
                   asChild
-                  variant="ghost"
-                  className="justify-center border border-[#0F226B] text-[#000000] hover:bg-[#0F226B] hover:text-white py-2"
+                  variant="outline"
+                  className="w-full border-[#0F226B] text-[#0F226B] hover:bg-[#0F226B] hover:text-white"
                 >
-                  <Link href="#" onClick={closeAllDropdowns}>
-                    Sign in
-                  </Link>
+                  <Link href="#" onClick={handleLinkClick}>Sign in</Link>
                 </Button>
-                <Button
-                  asChild
-                  className="bg-[#0F226B] text-white hover:bg-[#0a1a52] py-2"
-                >
-                  <Link href="#" onClick={closeAllDropdowns}>
-                    Register
-                  </Link>
+                <Button asChild className="w-full bg-[#0F226B] hover:bg-[#0a1a52]">
+                  <Link href="#" onClick={handleLinkClick}>Register</Link>
                 </Button>
               </div>
-            </nav>
+            </div>
           </div>
         )}
       </div>
