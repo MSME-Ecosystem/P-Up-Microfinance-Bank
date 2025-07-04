@@ -40,7 +40,7 @@ export function Footer() {
     <div>
       <footer className="bg-white text-black lg:pt-16 lg:pb-12">
         {/* Main Footer Content */}
-        <div className="container mx-auto  lg:py-16 pb-16 lg:px-0 px-5">
+        <div className="mx-auto  lg:py-16 pb-16 lg:px-16 px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:gap-25 gap-10">
             {/* Company Info - Takes 2 columns on large screens */}
             <div className="lg:col-span-2 space-y-6">

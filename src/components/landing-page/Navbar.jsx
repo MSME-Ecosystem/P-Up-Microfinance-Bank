@@ -188,7 +188,8 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-[70px] flex items-center bg-[#F0FAF8]">
-      <div className="container mx-auto">
+      {/* <div className="container mx-auto"> */}
+      <div className="w-full mx-auto lg:px-16 px-5 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link
@@ -357,7 +358,7 @@ export function Navbar() {
               asChild
               className="border border-[#0F226B] bg-transparent text-[#0F226B] h-10 hover:bg-[#0F226B] hover:text-white transition-colors"
             >
-              <Link href="/signin" onClick={closeAllDropdowns}>
+              <Link href="#" onClick={closeAllDropdowns}>
                 Sign in
               </Link>
             </Button>
@@ -365,7 +366,7 @@ export function Navbar() {
               asChild
               className="bg-[#0F226B] text-white h-10 hover:bg-[#0a1a52] transition-colors"
             >
-              <Link href="/register" onClick={closeAllDropdowns}>
+              <Link href="#" onClick={closeAllDropdowns}>
                 Register
               </Link>
             </Button>
