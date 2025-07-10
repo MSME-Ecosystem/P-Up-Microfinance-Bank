@@ -48,10 +48,10 @@ export function Footer() {
                 <div className="flex flex-col space-x-3 items-center-center mb-4">
                   <div className="w-16 h-16 flex items-center justify-center">
                     <Image
-                      src={"/newlogo.svg"}
+                      src={"/new-p-up.svg"}
                       alt="Logo"
-                      width={70}
-                      height={70}
+                      width={50}
+                      height={50}
                     />
                   </div>
                   <p className="text-[#1B1B1B] text-[14px] mt-2">

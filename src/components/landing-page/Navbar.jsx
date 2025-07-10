@@ -178,7 +178,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2" onClick={handleLinkClick}>
             <div className="w-10 h-10 flex items-center justify-center">
-              <Image src="/newlogo.svg" alt="Logo" width={45} height={45} />
+              <Image src="/new-p-up.svg" alt="Logo" width={45} height={45} />
             </div>
           </Link>
 
