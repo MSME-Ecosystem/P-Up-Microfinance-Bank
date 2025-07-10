@@ -285,7 +285,7 @@ export function Navbar() {
             <Button
               asChild
               variant="outline"
-              className="border-[#0F226B] text-[#0F226B] hover:bg-[#0F226B] hover:text-white h-10"
+              className="border-[#0F226B] bg-transparent text-[#0F226B] hover:bg-[#0F226B] hover:text-white h-10"
             >
               <Link href="#" onClick={handleLinkClick}>Sign in</Link>
             </Button>

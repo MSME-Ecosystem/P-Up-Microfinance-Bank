@@ -44,7 +44,7 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 lg:gap-25 gap-10">
             {/* Company Info - Takes 2 columns on large screens */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="lg:block flex items-center justify-between">
+              <div className="lg:block block items-center justify-between">
                 <div className="flex flex-col space-x-3 items-center-center mb-4">
                   <div className="w-16 h-16 flex items-center justify-center">
                     <Image
@@ -54,8 +54,22 @@ export function Footer() {
                       height={70}
                     />
                   </div>
+                  <p className="text-[#1B1B1B] text-[14px] mt-2">
+                    P-UP Financial Innovation Services
+                  </p>
+                  <div className="flex items-center space-x-3 text-[#1B1B1B] text-[14px] lg:mt-8 mt-5">
+                    <Image
+                      src={"/cbn.svg"}
+                      alt="Logo"
+                      width={20}
+                      height={20}
+                    />
+                    <div>
+                      <p>Powered by P-UP Microfinance <br /> Bank Fully Regulated by CBN </p>
+                    </div>
+                  </div>
                 </div>
-                <button className="lg:mt-10  border border-[#0F226B] text-[#0F226B] px-3 rounded-[10px] w-[215px] h-[40px]">
+                <button className="lg:mt-8 mt-5  border border-[#0F226B] text-[#0F226B] px-3 rounded-[10px] w-[215px] h-[40px]">
                   Contact sales
                 </button>
               </div>
@@ -101,8 +115,8 @@ export function Footer() {
               </h4>
               <div className="pt-2">
                 <div>
-                  <p className="lg:w-[250px] w-auto text-[#1B1B1B]">
-                    Office Address details should be made available here
+                  <p className="lg:w-[250px] w-auto text-[#1B1B1B] text-[14px]">
+                   7 Ibiyinka Olorunbe Close, Victoria Island Lagos
                   </p>
                 </div>
               </div>
