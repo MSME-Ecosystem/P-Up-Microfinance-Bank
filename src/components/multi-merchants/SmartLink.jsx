@@ -12,15 +12,15 @@ const SmartLink = () => {
             Featuring
           </p>
           <h2 className="lg:py-5 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center lg:w-[400px] w-auto">
-            SmartLink checkout
-            for group sales{" "}
+            SmartLink checkout for group sales{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 w-[464px] lg:leading-7">
-          Generate a single checkout link that combines multiple merchants, products, and services, making group selling fast and seamless.
+            Generate a single checkout link that combines multiple merchants,
+            products, and services, making group selling fast and seamless.
           </p>
           <Button
             asChild
-            className="bg-[#0F226B] text-white h-11 font-bold  px-24 lg:mb-0 mb-6"
+            className="bg-[#0F226B] text-white h-11 font-bold px-24 lg:mb-0 mb-6"
           >
             <Link href="#">Create SmartLink</Link>
           </Button>{" "}

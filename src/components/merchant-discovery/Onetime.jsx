@@ -13,7 +13,8 @@ const Onetime = () => {
             Featuring
           </p>
           <h2 className="lg:py-6 py-2 text-[#0171DF] lg:text-[32px] text-[24px] font-[700] lg:text-left text-center lg:w-[464px] w-auto">
-            Get verified once. <br className="lg:block hidden"/>Trusted everywhere.{" "}
+            Get verified once. <br className="lg:block hidden" />
+            Trusted everywhere.{" "}
           </h2>
           <p className="text-[16px] lg:text-left text-center lg:mb-8 mb-4 lg:w-[464px] w-auto lg:leading-7">
             Merchants register once and get verified across platforms—no

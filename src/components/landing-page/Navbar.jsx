@@ -127,8 +127,8 @@ export function Navbar() {
         },
       ],
     },
-    { name: "About Us", href: "#" },
-    { name: "Documentation", href: "#" },
+    // { name: "About Us", href: "#" },
+    // { name: "Documentation", href: "#" },
   ];
 
   // Close dropdowns when route changes
